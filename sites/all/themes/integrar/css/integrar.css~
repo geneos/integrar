@@ -1,0 +1,12 @@
+.views-content-counter  {
+  float: left;
+  padding: 10px 15px;
+  background-image: background-image: url("../images/add.png") no-repeat right;;
+}
+.views-field-counter
+ 
+
+.views_slideshow_controls_text_pause,
+.views_slideshow_controls_text_play {
+  display: none;
+}
