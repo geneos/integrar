@@ -2,13 +2,14 @@
 /** CONFIGURACION GENERAL DE FONT, HEADER Y BREADCRUMB **/
 
 /** FONT **/
-@import url(http://fonts.googleapis.com/css?family=Open+Sans+Condensed:700,500|Open+Sans:400,300);
+@import url(http://fonts.googleapis.com/css?family=Open+Sans+Condensed:600,400,300|Open+Sans:600,400,300);
 
 
 body {
 font-family: 'Open Sans', sans-serif;
 margin-left: -60px;
-font-size: 87%;}
+font-size: 87%;
+}
 
 
 /** HEADER **/
@@ -100,7 +101,8 @@ display: none;
   font-size: 14px;
   line-height: 14px;
   text-align: center;
-  font-weight:bold
+  font-stretch: Condensed;
+  font-weight: bold;
   -webkit-border-top-left-radius: 30px;
   -webkit-border-top-right-radius: 15px;
   -moz-border-radius-topleft: 30px;
@@ -298,12 +300,15 @@ display: none;
 }
 
 .caja-consultoria .field-name-body {
-    font-weight: bold;
     text-align: justify;
     margin-left: 200px;
     margin-top: -144px;
 }
 
+.caja-consultoria .field-name-body .bajada-consultoria-bold {
+  font-weight: bold;
+  color: #4d8a43;
+}
  
 
 /**Caja de título bajada **/
@@ -448,7 +453,7 @@ margin-left: 60px;
 /**Caja de Envio CV **/
 
  
-.envio-cv1 {
+.envio-cv {
 width: 80px;
 height: 500px;
 padding: 10px 10px 20px 10px;
@@ -486,7 +491,7 @@ margin-left: 48px;
 .caja-envio-cv #edit-submitted-adjuntar-el-cv-upload-button  {
 border: 0;
 font-size:0pt;
-margin-top: -10px;
+margin-top: -15px;
 background: none;
 background: transparent url("../images/btn_envio_cv.png") no-repeat center top;
 overflow: hidden;
@@ -494,13 +499,21 @@ height: 55px;
 width: 50px;
 }
 
-.caja-envio-cv #edit-submitted-adjuntar-el-cv-upload   {
+.caja-envio-cv .cv-adjunto .form-file  {
+border: 0;
+font-size:0pt;
+float: left;
+background: none;
+background:  url("../images/buscar.png") no-repeat center top;
+cursor:pointer;
+width: 134px;
+height: 30px;
 }
 
- 
+
 .caja-envio-cv .webform-submit    {
 margin-left: 240px;
-margin-top: -30px;
+margin-top: -35px;
 border: 0;
 font-size:0pt;
 float: left;
@@ -669,7 +682,7 @@ background-image: url("../images/info_consultoria_over.png");
   width: 85%;
 }
 
-.pane-vista-busquedas h2 {
+.pane-vista-busquedas .pane-title {
  color: #4d8a43;
  margin-left: 7px;
 }
@@ -714,7 +727,6 @@ width: 780px
   font-size:0pt;
   background: none;
   background: transparent url("../images/btn_enviar.png") no-repeat center top;
-  overflow: hidden;
   height: 45px;
   width: 99px;
 
@@ -810,11 +822,21 @@ width: 780px
 .bajada-seleccion-personal .node-imagen-con-bajada .field-name-body {
   font-size: 1.6em;
   margin-left: 290px;
-  text-align: justify;
-  margin-top: -100px;
+  text-align: center;
+  margin-top: -130px;
   width: 430px;
 }
 
+
+.bajada-seleccion-personal .pane-title {
+    background: url("../images/diplomatura_bg.png") no-repeat scroll 0 0 rgba(0, 0, 0, 0);
+    color: rgb(255, 255, 255);
+    height: 95px;
+    margin-left: 40px;
+    margin-top: -40px;
+    padding: 25px 80px;
+    width: 358px;
+}
 .bajada-seleccion-personal .node-imagen-con-bajada img {
 margin-left: 750px;
  }
@@ -887,24 +909,26 @@ margin-left: 750px;
  }
 
 
- .panel-ubicacion .pane-title {
+ .panel-ubicacion-consultoria .pane-title {
   color: #4d8a43;
- font-size: 1.6em;
+  font-size: 1.6em;
  }
 
 
-.panel-ubicacion .node-imagen-con-bajada .field-name-body {
+.panel-ubicacion-consultoria .node-imagen-con-bajada .field-name-body {
   margin-left: 0px;
   text-align: left;
   margin-top: -140px;
   width: 300px;
 }
 
-.panel-ubicacion .node-imagen-con-bajada img {
+.panel-ubicacion-consultoria .node-imagen-con-bajada img {
 margin-left: 250px;
- }
+}
 
-
+.panel-ubicacion-consultoria a {
+  color: #4d8a43;
+}
 
 /** CONTACTO CONSULTORIA **/
 
@@ -961,7 +985,6 @@ background: url("../images/1_cap.png") top left no-repeat;
 }
 
 .slideshow-capacitacion .more-link a {
-
 background-image: url("../images/info_capacitacion.png");
 font-size:0px;
 content:" ";
@@ -992,13 +1015,15 @@ margin-left: 200px;
 
 .caja-capacitacion .field-name-body {
     text-align: justify;
-    font-weight: 500;
     margin-left: 200px;
     margin-top: -140px;
 }
 
+ 
 
-
+.caja-capacitacion .bajada-capacitacion-bold {
+  font-weight: bold;
+ }
 
 .pane-vista-slideshow-capacitacion h2 {
 text-transform: capitalize;
@@ -1050,8 +1075,9 @@ background-image: url("../images/info_capacitacion_over.png");
 }
 
 .pane-bloque-novedades .views-slideshow-cycle-main-frame-row-item {
-width: 300px;
-height: 100px;
+  height: 100px;
+  padding: 0 20px;
+  width: 290px;
 }
 
 
@@ -1365,12 +1391,33 @@ color: #114f79;
     margin-left: 120px;
     overflow: hidden;
     width: 99px;
-}
+  }
 
 .contacto-capacitacion .form-submit:hover {
   background: url("../images/btn_enviar_hover.png") no-repeat scroll center top transparent;
 }
 
+
+ .panel-ubicacion-capacitacion .pane-title {
+  color: #114f79;
+  font-size: 1.6em;
+ }
+
+
+.panel-ubicacion-capacitacion .node-imagen-con-bajada .field-name-body {
+  margin-left: 0px;
+  text-align: left;
+  margin-top: -140px;
+  width: 300px;
+}
+
+.panel-ubicacion-capacitacion .node-imagen-con-bajada img {
+margin-left: 250px;
+}
+
+.panel-ubicacion-capacitacion a {
+  color: #114f79;
+}
 
 
 /** MAPA PARA SECCION CONTACTO (comun a los dos contextos) **/
@@ -1419,7 +1466,7 @@ padding: 10px 10px;
 
 #footer-wrapper .block {
     border: none;
-   }
+}
 
 .contexto-inicio #footer-wrapper {
 background: #e1e2e3 url("../images/footer_home2.png") top center no-repeat  ;
@@ -1483,7 +1530,7 @@ text-decoration: none;
 
 #footer-wrapper .block {
     margin: 0 ;
-  }
+}
 
 #footer-logo   {
 height: 47px;
