@@ -69,11 +69,12 @@ display: none;
 /** MENU PRINCIPAL SEGUN CONTEXTO CONSULTORIA/CAPACITACION **/
 
 #header .region-header {
-    margin: 100px 0 0;
+    margin: 90px 0 0;
+    height: 60px; 
 }
 
 .region-header .block-menu {
-  width:535px;
+  width:535px; 
   margin:0px;
 }
 
@@ -300,9 +301,10 @@ display: none;
     font-weight: bold;
     text-align: justify;
     margin-left: 200px;
-    margin-top: -155px;
+    margin-top: -144px;
 }
 
+ 
 
 /**Caja de título bajada **/
 .caja-bajada   {
@@ -445,18 +447,20 @@ margin-left: 60px;
 
 /**Caja de Envio CV **/
 
-.envio-cv {
+ 
+.envio-cv1 {
 width: 80px;
 height: 500px;
 padding: 10px 10px 20px 10px;
-}
+}  
 
 .caja-envio-cv {
 background-image: url("../images/base_envia_cv_2.png");
 background-position: 0px 30px;
 background-repeat: no-repeat;
-padding: 40px;
-height: 300px;
+height: 335px;
+margin-left: 0px;
+padding: 40px 0 0 40px; 
 }
 
 .caja-envio-cv .form-item label {
@@ -473,13 +477,16 @@ margin-left: 48px;
   display: none;
 }
 
-.caja-envio-cv input.form-text, textarea.form-textarea, select.form-select {
-    background: #ccc;
+.caja-envio-cv input.form-text, 
+.caja-envio-cv textarea.form-textarea, 
+.caja-envio-cv select.form-select {
+ background: #ccc; 
 }
 
 .caja-envio-cv #edit-submitted-adjuntar-el-cv-upload-button  {
 border: 0;
 font-size:0pt;
+margin-top: -10px;
 background: none;
 background: transparent url("../images/btn_envio_cv.png") no-repeat center top;
 overflow: hidden;
@@ -492,11 +499,11 @@ width: 50px;
 
  
 .caja-envio-cv .webform-submit    {
-padding-top: 32px;
-margin-top: -20px;
 margin-left: 240px;
+margin-top: -30px;
 border: 0;
 font-size:0pt;
+float: left;
 background: none;
 background: transparent url("../images/btn_enviar.png") no-repeat center top;
 overflow: hidden;
@@ -551,16 +558,16 @@ color: black;
 width: 720px
 }
 
-/** BUSQUEDAS **/
+/** PANEL BUSQUEDAS EN LA HOME DE CONSULTORIA **/
 .panel-busquedas {
 background-image: url("../images/base_programas.png");
 background-position: 0px 30px;
 background-repeat: no-repeat;
 padding: 30px 80px 0px 70px;
-text-align: left;
+text-align: justify;
 height: 250px;
 margin-left: 45px;
-margin-top: 95px;
+margin-top: 100px;
 }
 
 
@@ -603,9 +610,7 @@ color: inherit;
  top: 0px;
 }
 
-.panel-busquedas  .more-link {
- top: -20px;
-}
+
 
 .panel-busquedas .views-label-field-zona {
 font-weight:bold
@@ -619,10 +624,54 @@ font-weight:bold
  color: #4d8a43;
   }
 
+/**CAPACITACION CORPORATIVA **/
+
+.panel-capacitacion-corporativa {
+/**background-image: url("../images/base_programas.png");
+background-position: 0px 30px;
+background-repeat: no-repeat;
+text-align: left;
+padding-top: 80px;**/
+width: 360px;
+margin-left: 30px;
+text-align: justify;
+}
+
+.panel-capacitacion-corporativa h2 {
+color: #64B35F;
+}
+
+.panel-capacitacion-corporativa .field-name-field-enlace a {
+font-size:0px;
+content:" ";
+color:transparent;
+background-image: url("../images/info_consultoria.png");
+display:block;
+width: 76px;
+height: 38px;
+margin-left: 315px;
+margin-top: -20px;
+opacity:1;
+}
+
+.panel-capacitacion-corporativa .field-name-field-enlace:hover a {
+background-image: url("../images/info_consultoria_over.png");
+}
+
+
+
 
 /** BUSQUEDAS LABORALES **/
+
+.pane-vista-busquedas  {
+  margin-left: auto;
+  margin-right: auto;
+  width: 85%;
+}
+
 .pane-vista-busquedas h2 {
  color: #4d8a43;
+ margin-left: 7px;
 }
 
 .pane-vista-busquedas .views-row {
@@ -634,20 +683,258 @@ height: 250px;
 }
 
 .pane-vista-busquedas .views-field-title,
+.pane-vista-busquedas .views-label-field-empresa,
 .pane-vista-busquedas .views-label-field-zona,
 .pane-vista-busquedas .views-field-body {
  padding-left: 40px; 
+
 }
 
-.pane-vista-busquedas .views-field-title  {
+.pane-vista-busquedas .views-field-title,
+.pane-vista-busquedas .views-label-field-empresa,
+.pane-vista-busquedas .views-label-field-zona  {
  color: #4d8a43;
  }
 
 .pane-vista-busquedas .views-field-body {
 width: 780px
+
+}
+
+.views-field .ver-mas {
+  margin-left: 40px;
 }
 
 
+/** POPUP BUSQUEDAS **/
+
+.busquedas-popup a  {
+  margin-left: 700px;
+  border: 0;
+  font-size:0pt;
+  background: none;
+  background: transparent url("../images/btn_enviar.png") no-repeat center top;
+  overflow: hidden;
+  height: 45px;
+  width: 99px;
+
+}
+
+.popup-element-body {
+  background-image: url("../images/base_destacados.png");
+  background-position: 0 0;
+  background-repeat: no-repeat;
+  height: 245px;
+  margin-left: 0;
+  padding: 25px 35px 35px;
+  position: relative;
+  text-align: left;
+  width: 375px;
+  left: -500px;
+  top: -100px;
+
+ }
+
+.popup-element-body a.popup-close-button {
+  background-image: url("../images/close.png");
+  background-position: 0 0;
+  background-repeat: no-repeat;
+  font-size:0pt;
+  height: 34px;
+  width: 34px;
+}
+
+
+
+/** PANEL SLIDESHOW DESTACADOS en BUSQUEDAS LABORALES **/
+
+
+ .panel-destacados {
+  background-image: url("../images/base_destacados.png");
+  background-position: 40px 20px;
+  background-repeat: no-repeat;
+  padding-top: 20px; 
+  height: 310px; 
+  width: 480px;
+  margin-top: 20px;
+}
+
+.panel-destacados .pane-title {
+  color: #4d8a43;
+  padding-left: 80px;
+
+}
+.panel-destacados .pane-content  {
+  padding: 10px 0 0 110px;
+  width: 300px;
+}
+.panel-destacados   .views-slideshow-controls-text-previous {
+    background-image: url("../images/left-01.png");
+    color: transparent;
+    content: " ";
+    display: block;
+    font-size: 0;
+    height: 35px;
+    left: -140px;
+    opacity: 1;
+    position: absolute;
+    top: 0px;
+    width: 22px;
+}
+
+.panel-destacados  .views-slideshow-controls-text-next {
+    background-image: url("../images/right-01.png");
+    color: transparent;
+    content: " ";
+    display: block;
+    font-size: 0;
+    height: 35px;
+    left: 210px;
+    opacity: 1;
+    position: absolute;
+    top: 0px;
+    width: 22px;
+}
+
+
+/** PAGINA SELECCION DE PERSONAL **/
+
+
+
+
+.bajada-seleccion-personal .node-imagen-con-bajada {
+ width: 1220px;
+}
+ 
+
+.bajada-seleccion-personal .node-imagen-con-bajada .field-name-body {
+  font-size: 1.6em;
+  margin-left: 290px;
+  text-align: justify;
+  margin-top: -100px;
+  width: 430px;
+}
+
+.bajada-seleccion-personal .node-imagen-con-bajada img {
+margin-left: 750px;
+ }
+
+.principal-seleccion-personal .node-imagen-con-bajada {
+ width: 1220px;
+}
+
+.principal-seleccion-personal {
+  padding: 20px 60px;
+}
+
+.principal-seleccion-personal .node-imagen-con-bajada .field-name-body {
+   margin-left: 470px;
+   text-align: justify;
+   width: 400px;
+}
+
+ .principal-seleccion-personal .field-item img {
+  float: left;
+ }
+
+
+/** CAPACITACION CORPORATIVA **/
+
+
+.capacitacion-corporativa-bajada .pane-title {
+ margin-top: 100px;
+ color: #4d8a43;
+ font-size: 1.6em;
+ margin-left: -40px;
+ margin-top: 110px;
+}
+
+
+.capacitacion-corporativa-bajada img {
+ margin-left: -200px;
+ margin-top: -120px;
+
+}
+.capacitacion-corporativa-bajada   {
+ font-size: 1.6em;
+ margin-left: 290px;
+ text-align: justify;
+ margin-top: -100px;
+ width: 430px;
+}
+
+
+.capacitacion-corporativa-bajada  .field-name-body {
+  text-align: center;
+  margin-top: -50px;
+}
+
+.principal-capacitacion-coporativa {
+ 
+}
+
+
+.principal-capacitacion-coporativa .node-imagen-con-bajada .field-name-body {
+  float: left;
+  margin-left: 40px;
+  margin-top: -360px;
+  text-align: justify;
+  width: 400px;
+}
+
+.principal-capacitacion-coporativa .field-item img {
+   margin-left: 470px;
+ }
+
+
+ .panel-ubicacion .pane-title {
+  color: #4d8a43;
+ font-size: 1.6em;
+ }
+
+
+.panel-ubicacion .node-imagen-con-bajada .field-name-body {
+  margin-left: 0px;
+  text-align: left;
+  margin-top: -140px;
+  width: 300px;
+}
+
+.panel-ubicacion .node-imagen-con-bajada img {
+margin-left: 250px;
+ }
+
+
+
+/** CONTACTO CONSULTORIA **/
+
+.contacto-consultoria {
+ padding: 0 80px;
+}
+.contacto-consultoria .pane-title {
+color: #4d8a43;
+ font-size: 1.6em;
+}
+
+.contacto-consultoria .form-textarea-wrapper {
+  background: none transparent;
+}
+
+
+.contacto-consultoria .form-submit {
+    background: url("../images/btn_enviar.png") no-repeat scroll center top transparent;
+    border: 0 none;
+    float: left;
+    font-size: 0;
+    height: 45px;
+    margin-left: 120px;
+    overflow: hidden;
+    width: 99px;
+}
+
+.contacto-consultoria .form-submit:hover {
+  background: url("../images/btn_enviar_hover.png") no-repeat scroll center top transparent;
+}
 
 /** SECCION CAPACITACION**/
 
@@ -711,6 +998,19 @@ margin-left: 200px;
 }
 
 
+
+
+.pane-vista-slideshow-capacitacion h2 {
+text-transform: capitalize;
+margin-left: 50px;
+font-size: 1.8em;
+color: #1d639a;
+}
+
+.pane-vista-slideshow-capacitacion  {
+padding-left: 60px;
+
+}
 /** BLOQUE NOVEDADES DE LA HOME DE CAPACITACION **/
 
 .pane-bloque-novedades h2 {
@@ -727,7 +1027,6 @@ background-position: 0px 0px;
 background-repeat: no-repeat;
 padding: 50px 60px 50px 60px;
 text-align: left;
-width: 300px;
 height: 330px;
 margin-left: 0px;
 }
@@ -785,95 +1084,99 @@ height: 100px;
 }
 
 
+/** DIPLOMATURAS **/
 
-/** DESTACADOS **/
-
-
-/** ver que es
-
- .panel-destacados {
-  background-image: url("../images/base_destacados.png");
-  background-position: 40px 20px;
-  background-repeat: no-repeat;
-  padding-top: 20px; 
-  height: 250px; 
-}
-.panel-destacados .pane-title {
-  color: #4d8a43;
-  padding-left: 80px;
-
-}
-.panel-destacados .pane-content  {
-  padding: 10px 0 0 110px;
-  width: 400px;
-}
-.panel-destacados   .views-slideshow-controls-text-previous {
-    background-image: url("../images/left.png");
-    color: transparent;
-    content: " ";
-    display: block;
-    font-size: 0;
-    height: 35px;
-    left: -140px;
-    opacity: 1;
-    position: absolute;
-    top: 0px;
-    width: 22px;
+.diplomaturas-bajada .pane-title {
+ color: rgb(255,255,255); 
+ margin-left: 40px;
+ margin-top: -40px;
+ background:  url("../images/diplomatura_bg.png") no-repeat 0 0;
+ width: 358px ;
+ height: 95px;
+ padding: 25px 100px;
 }
 
-.panel-destacados  .views-slideshow-controls-text-next {
-    background-image: url("../images/right.png");
-    color: transparent;
-    content: " ";
-    display: block;
-    font-size: 0;
-    height: 35px;
-    left: 210px;
-    opacity: 1;
-    position: absolute;
-    top: 0px;
-    width: 22px;
-}
-
-**/
-
-
-
-/**CAPACITACION CORPORATIVA **/
-
-.panel-capacitacion-corporativa {
-/**background-image: url("../images/base_programas.png");
-background-position: 0px 30px;
-background-repeat: no-repeat;
-text-align: left;
-padding-top: 80px;**/
-width: 320px;
-margin-left: 67px;
-text-align: justify;
-}
-
-.panel-capacitacion-corporativa h2 {
-color: #64B35F;
-}
-
-.panel-capacitacion-corporativa .field-name-field-enlace a {
-font-size:0px;
-content:" ";
-color:transparent;
-background-image: url("../images/info_consultoria.png");
-display:block;
-width: 76px;
-height: 38px;
-margin-left: 315px;
-margin-top: -20px;
-opacity:1;
-}
-
-.panel-capacitacion-corporativa .field-name-field-enlace:hover a {
-background-image: url("../images/info_consultoria_over.png");
+.diplomaturas-bajada img {
+margin-left: 750px;
+margin-top: -120px;
 }
 
 
+.principal-diplomaturas .node-imagen-con-bajada .field-name-body {
+    margin-left: 40px;
+    margin-top: -200px;
+    text-align: justify;
+    width: 400px;
+}
+
+.principal-diplomaturas .field-item img {
+   margin-left: 490px;
+   vertical-align: middle;
+ }
+
+
+/** CURSOS TECNICOS **/
+
+.cursos-tecnicos-bajada h2 {
+ color: #114f79;
+ font-size: 1.6em;
+ margin-left: 40px;
+}
+
+.cursos-tecnicos-bajada   {
+ width: 800px;
+ font-size: 1.6em;
+}
+
+.cursos-tecnicos-bajada  .field-name-body {
+  text-align: center;
+  margin-left: 290px;
+ text-align: center;
+}
+
+.principal-cursos-tecnicos .node-imagen-con-bajada .field-name-body {
+    margin-left: 40px;
+    margin-top: -140px;
+    text-align: justify;
+    width: 400px;
+}
+
+.principal-cursos-tecnicos .field-item img {
+   margin-left: 470px;
+   vertical-align: middle;
+ }
+
+
+/** PROGRAMAS EJECUTIVOS **/
+
+.programas-ejecutivos-bajada h2 {
+ color: #114f79;
+ font-size: 1.6em;
+ margin-left: 40px;
+}
+
+.programas-ejecutivos-bajada   {
+ width: 800px;
+ font-size: 1.6em;
+}
+
+.programas-ejecutivos-bajada  .field-name-body {
+  text-align: center;
+  margin-left: 290px;
+ text-align: center;
+}
+
+.principal-programas-ejecutivos .node-imagen-con-bajada .field-name-body {
+    margin-left: 40px;
+    margin-top: -240px;
+    text-align: justify;
+    width: 400px;
+}
+
+.principal-programas-ejecutivos .field-item img {
+   margin-left: 470px;
+   vertical-align: middle;
+ }
 
 /** NOVEDADES CAPACITACION **/
 
@@ -970,13 +1273,11 @@ height: 300px;
 
 .view-novedades-capacitacion .views-slideshow-controls-bottom {
   margin-top: 15px;
-   margin-left: 200px;
-    margin-right: auto;
+  margin-left: 200px;
+  margin-right: auto;
 }
 
- 
-
-.view-novedades-capacitacion .views-slideshow-controls-bottom .views_slideshow_controls_text_previous {
+ .view-novedades-capacitacion .views-slideshow-controls-bottom .views_slideshow_controls_text_previous {
     background-image: url("../images/left.png");
     color: transparent;
     content: " ";
@@ -991,10 +1292,10 @@ height: 300px;
 }
 
 .view-novedades-capacitacion .views-slideshow-controls-bottom .views_slideshow_controls_text_next {
- background-image: url("../images/right.png");
-    color: transparent;
-    content: " ";
-    display: block;
+  background-image: url("../images/right.png");
+  color: transparent;
+  content: " ";
+  display: block;
     background-repeat: no-repeat;
     font-size: 0;
     opacity: 1;
@@ -1010,23 +1311,69 @@ margin-left: 50px;
 margin-bottom: 10px;
 }  
 
-/**
+ 
 
-.pane-novedades-capacitacion-destacados {
-  width: 300px;
-  margin-left: 120px;
+.view-novedades-capacitacion  .views-content-counter {
+opacity: 0.4;
+}
+
+ 
+.view-novedades-capacitacion  .views-content-counter .active {
+opacity: 1;
 }
 
 
-**/
+
+ /** DESTACADOS CAPACITACION **/
+
+.pane-novedades-destacados-capacitacion {
+  width: 300px;
+  margin-left: 150px;
+}
+
+ 
+.pane-novedades-destacados-capacitacion .pane-title ,
+.pane-novedades-diplomaturas .pane-title ,
+.pane-novedades-cursos-tecnicos .pane-title ,
+.pane-novedades-programas-ejecutivos .pane-title {
+  color: #114f79;
+  font-size: 1.8em;
+ }
+
+
+/** CONTACTO CAPACITACION **/
+
+.contacto-capacitacion {
+ padding: 0 80px;
+}
+.contacto-capacitacion .pane-title {
+color: #114f79;
+ font-size: 1.6em;
+}
+
+.contacto-capacitacion .form-textarea-wrapper {
+  background: none transparent;
+}
+
+
+.contacto-capacitacion .form-submit {
+    background: url("../images/btn_enviar.png") no-repeat scroll center top transparent;
+    border: 0 none;
+    float: left;
+    font-size: 0;
+    height: 45px;
+    margin-left: 120px;
+    overflow: hidden;
+    width: 99px;
+}
+
+.contacto-capacitacion .form-submit:hover {
+  background: url("../images/btn_enviar_hover.png") no-repeat scroll center top transparent;
+}
 
 
 
-
-
-
-
-/** MAPA PARA SECCION CONTACTO **/
+/** MAPA PARA SECCION CONTACTO (comun a los dos contextos) **/
 
 .node-mapa-de-ubicacion {
 position: relative;
