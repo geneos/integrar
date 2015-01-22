@@ -2,7 +2,7 @@
 /** CONFIGURACION GENERAL DE FONT, HEADER Y BREADCRUMB **/
 
 /** FONT **/
-@import url(http://fonts.googleapis.com/css?family=Open+Sans+Condensed:600,400,300|Open+Sans:600,400,300);
+@import url(http://fonts.googleapis.com/css?family=Open+Sans+Condensed:700,600,400,300|Open+Sans:700,600,400,300);
 
 
 body {
@@ -11,6 +11,10 @@ margin-left: -60px;
 font-size: 87%;
 }
 
+
+#content h2 {
+  font-family: 'Open Sans Condensed', sans-serif;
+} 
 
 /** HEADER **/
 #header {
@@ -332,7 +336,7 @@ float: left;
 /** Caja con imagen bajada (abajo del slider) **/
 
 .caja-consultoria {
-width: 800px;
+width: 770px;
 margin-left: auto ;
 margin-right: auto ;
 }
@@ -465,7 +469,7 @@ color: #1d639a;
 
 .pane-vista-slideshow-valores {
 height: 200px;
-margin-left: 100px;
+margin-left: 80px;
 margin-top: 60px;
 }
 
@@ -488,7 +492,7 @@ background-image: url("../images/base_envia_cv_2.png");
 background-position: 0px 30px;
 background-repeat: no-repeat;
 height: 335px;
-margin-left: 0px;
+margin-left: -30px;
 padding: 40px 0 0 40px; 
 }
 
@@ -621,44 +625,44 @@ color: inherit;
 
 .panel-busquedas  .views-slideshow-controls-text-next {
   background-image: url("../images/right-01.png");
-    color: transparent;
-    content: " ";
-    display: block;
-    font-size: 0;
-    height: 35px;
-    opacity: 1;
-    position: absolute;
-    width: 22px;
-    left: 220px;
-    top: 0px;
+  color: transparent;
+  content: " ";
+  display: block;
+  font-size: 0;
+  height: 35px;
+  opacity: 1;
+  position: absolute;
+  width: 22px;
+  left: 220px;
+  top: 0px;
 }
 
 .panel-busquedas  .views-slideshow-controls-text-previous {
   background-image: url("../images/left-01.png");
-    color: transparent;
-    content: " ";
-    display: block;
-    font-size: 0;
-    height: 35px;
-    opacity: 1;
-    position: absolute;
-    width: 22px;
- left: -150px;
- top: 0px;
+  color: transparent;
+  content: " ";
+  display: block;
+  font-size: 0;
+  height: 35px;
+  opacity: 1;
+  position: absolute;
+  width: 22px;
+  left: -150px;
+  top: 0px;
 }
 
 
 
 .panel-busquedas .views-label-field-zona {
-font-weight:bold
+  font-weight:bold
 }
 
 .panel-busquedas .views-field-title {
-font-weight:bold
+  font-weight:bold
 }
 
 .panel-busquedas .more-link a {
- color: #4d8a43;
+  color: #4d8a43;
   }
 
 /**CAPACITACION CORPORATIVA **/
@@ -669,8 +673,8 @@ background-position: 0px 30px;
 background-repeat: no-repeat;
 text-align: left;
 padding-top: 80px;**/
-width: 360px;
-margin-left: 30px;
+width: 390px;
+margin-left: 20px;
 text-align: justify;
 }
 
@@ -679,20 +683,20 @@ color: #64B35F;
 }
 
 .panel-capacitacion-corporativa .field-name-field-enlace a {
-font-size:0px;
-content:" ";
-color:transparent;
-background-image: url("../images/info_consultoria.png");
-display:block;
-width: 76px;
-height: 38px;
-margin-left: 315px;
-margin-top: -20px;
-opacity:1;
+  font-size:0px;
+  content:" ";
+  color:transparent;
+  background-image: url("../images/info_consultoria.png");
+  display:block;
+  width: 76px;
+  height: 38px;
+  margin-left: 315px;
+  margin-top: -20px;
+  opacity:1;
 }
 
 .panel-capacitacion-corporativa .field-name-field-enlace:hover a {
-background-image: url("../images/info_consultoria_over.png");
+  background-image: url("../images/info_consultoria_over.png");
 }
 
 
@@ -712,31 +716,76 @@ background-image: url("../images/info_consultoria_over.png");
 }
 
 .pane-vista-busquedas .views-row {
-background-image: url("../images/base_busqueda_laboral.png");
-background-position: 0px 0px;
-background-repeat: no-repeat;
-padding-top: 20px; 
-height: 250px;
+  background-image: url("../images/base_busqueda_laboral.png");
+  background-position: 0px 0px;
+  background-repeat: no-repeat;
+  padding-top: 20px; 
+  height: 250px;
 }
 
 .pane-vista-busquedas .views-field-title,
 .pane-vista-busquedas .views-label-field-empresa,
 .pane-vista-busquedas .views-label-field-zona,
 .pane-vista-busquedas .views-field-body {
- padding-left: 40px; 
+  padding-left: 40px; 
 
 }
 
 .pane-vista-busquedas .views-field-title,
 .pane-vista-busquedas .views-label-field-empresa,
 .pane-vista-busquedas .views-label-field-zona  {
- color: #4d8a43;
+  color: #4d8a43;
  }
 
 .pane-vista-busquedas .views-field-body {
-width: 780px
+  width: 780px
 
 }
+
+ 
+.pane-vista-busquedas .pager a:hover {
+  font-weight: bold;
+  color: #4d8a43;
+}
+
+.pane-vista-busquedas .pager .pager-first,
+.pane-vista-busquedas .pager .pager-last {
+display:none;
+}
+
+
+
+ .pane-vista-busquedas .pager .pager-previous a {
+    background-image: url("../images/left_consultoria.png");
+    color: transparent;
+    content: " ";
+    display: block;
+    background-repeat: no-repeat;
+    font-size: 0;
+    opacity: 1;
+    position: absolute;
+    width: 13px;
+    height: 13px;
+    margin-left: 350px;
+    margin-top: -15px;
+
+}
+
+.pane-vista-busquedas .pager .pager-next a {
+    background-image: url("../images/right_consultoria.png");
+    color: transparent;
+    content: " ";
+    display: block;
+    background-repeat: no-repeat;
+    font-size: 0;
+    opacity: 1;
+    position: absolute;
+    width: 13px;
+    height: 13px;
+    margin-left: 500px;
+    margin-top: -15px;
+}
+
 
 .views-field .ver-mas {
   margin-left: 40px;
@@ -750,10 +799,13 @@ width: 780px
   border: 0;
   font-size:0pt;
   background: none;
-  background: transparent url("../images/btn_enviar.png") no-repeat center top;
+  background: transparent url("../images/info_consultoria.png") no-repeat center top;
   height: 45px;
   width: 99px;
+}
 
+.busquedas-popup a:hover  {
+  background: transparent url("../images/info_consultoria_over.png") no-repeat center top;
 }
 
 .popup-element-body {
@@ -1029,6 +1081,7 @@ z-index:200;
 width: 800px;
 margin-left: auto ;
 margin-right: auto ;
+margin-top: -40px;
 }
 
 .caja-capacitacion h2 {
@@ -1052,7 +1105,6 @@ margin-left: 200px;
 .pane-vista-slideshow-capacitacion h2 {
 text-transform: capitalize;
 margin-left: 50px;
-font-size: 1.8em;
 color: #1d639a;
 }
 
@@ -1065,7 +1117,6 @@ padding-left: 60px;
 .pane-bloque-novedades h2 {
 text-transform: capitalize;
 margin-left: 50px;
-font-size: 1.8em;
 color: #1d639a;
 }
 
@@ -1136,23 +1187,24 @@ background-image: url("../images/info_capacitacion_over.png");
 
 /** DIPLOMATURAS **/
 
+
+ 
 .diplomaturas-bajada .pane-title {
- color: rgb(255,255,255); 
- margin-left: 40px;
- margin-top: -40px;
- background:  url("../images/diplomatura_bg.png") no-repeat 0 0;
+ color: white; 
+ background:  url("../images/diplomatura_bg.png") no-repeat -9px -9px ;
  width: 358px ;
  height: 95px;
- padding: 25px 100px;
 }
+ 
 
 .diplomaturas-bajada img {
 margin-left: 750px;
-margin-top: -120px;
+margin-top: -40px;
 }
 
 
-.principal-diplomaturas .node-imagen-con-bajada .field-name-body {
+
+.principal-diplomaturas .field-name-body {
     margin-left: 40px;
     margin-top: -200px;
     text-align: justify;
@@ -1167,26 +1219,26 @@ margin-top: -120px;
 
 /** CURSOS TECNICOS **/
 
-.cursos-tecnicos-bajada h2 {
+.diplomaturas-bajada,
+.cursos-tecnicos-bajada,
+.programas-ejecutivos-bajada   {
+ margin-top: -40px;
+ font-size: 1.6em;
+}
+
+.cursos-tecnicos-bajada h2,
+.programas-ejecutivos-bajada h2 {
  color: #114f79;
- font-size: 1.6em;
- margin-left: 40px;
 }
 
-.cursos-tecnicos-bajada   {
- width: 800px;
- font-size: 1.6em;
-}
-
-.cursos-tecnicos-bajada  .field-name-body {
-  text-align: center;
-  margin-left: 290px;
+.cursos-tecnicos-bajada .field-name-body,
+.programas-ejecutivos-bajada .field-name-body {
  text-align: center;
 }
 
-.principal-cursos-tecnicos .node-imagen-con-bajada .field-name-body {
+.principal-cursos-tecnicos .field-name-body {
     margin-left: 40px;
-    margin-top: -140px;
+    margin-top: 40px;
     text-align: justify;
     width: 400px;
 }
@@ -1197,25 +1249,10 @@ margin-top: -120px;
  }
 
 
-/** PROGRAMAS EJECUTIVOS **/
+/** PROGRAMAS EJECUTIVOS CONTENIDO PRINCIPAL**/
 
-.programas-ejecutivos-bajada h2 {
- color: #114f79;
- font-size: 1.6em;
- margin-left: 40px;
-}
 
-.programas-ejecutivos-bajada   {
- width: 800px;
- font-size: 1.6em;
-}
-
-.programas-ejecutivos-bajada  .field-name-body {
-  text-align: center;
-  margin-left: 290px;
- text-align: center;
-}
-
+ 
 .principal-programas-ejecutivos .node-imagen-con-bajada .field-name-body {
     margin-left: 40px;
     margin-top: -240px;
@@ -1387,7 +1424,6 @@ opacity: 1;
 .pane-novedades-cursos-tecnicos .pane-title ,
 .pane-novedades-programas-ejecutivos .pane-title {
   color: #114f79;
-  font-size: 1.8em;
  }
 
 
@@ -1396,9 +1432,9 @@ opacity: 1;
 .contacto-capacitacion {
  padding: 0 80px;
 }
+
 .contacto-capacitacion .pane-title {
-color: #114f79;
- font-size: 1.6em;
+ color: #114f79;
 }
 
 .contacto-capacitacion .form-textarea-wrapper {
@@ -1612,7 +1648,6 @@ margin-left: 0px;
 .pane-bloque-novedades h2 {
 text-transform: capitalize;
 margin-left: 50px;
-font-size: 1.8em;
 color: #1d639a;
 }
 
