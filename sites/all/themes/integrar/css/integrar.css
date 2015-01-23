@@ -982,18 +982,19 @@ margin-left: 210px;
  .panel-ubicacion-consultoria .pane-title {
   color: #4d8a43;
   font-size: 1.6em;
+  margin-left: -20px;
  }
 
 
 .panel-ubicacion-consultoria .node-imagen-con-bajada .field-name-body {
-  margin-left: 0px;
+  margin-left: -20px;
   text-align: left;
   margin-top: -140px;
   width: 300px;
 }
 
 .panel-ubicacion-consultoria .node-imagen-con-bajada img {
-margin-left: 250px;
+margin-left: 220px;
 }
 
 .panel-ubicacion-consultoria a {
@@ -1253,14 +1254,16 @@ margin-top: -40px;
 
 .imagen-programas-ejecutivos {
 vertical-align: top;
-
 }
 
- .principal-programas-ejecutivos .group-left {
-  text-align: justify;
+.imagen-consulta-programas-ejecutivos {
   margin-left: 80px;
-  width: 400px;
+}
 
+.principal-programas-ejecutivos .group-left {
+ text-align: justify;
+ margin-left: 80px;
+ width: 400px;
 }
 
 
