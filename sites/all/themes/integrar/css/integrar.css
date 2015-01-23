@@ -11,9 +11,9 @@ margin-left: -60px;
 font-size: 87%;
 }
 
-
 #content h2 {
-  font-family: 'Open Sans Condensed', sans-serif;
+  font-family: 'Open Sans ', sans-serif;
+  font-stretch: ultra-condensed;
 } 
 
 /** HEADER **/
@@ -336,8 +336,8 @@ float: left;
 /** Caja con imagen bajada (abajo del slider) **/
 
 .caja-consultoria {
-width: 770px;
-margin-left: auto ;
+width: 1600px;
+margin-left: 80px ;
 margin-right: auto ;
 }
 
@@ -476,6 +476,7 @@ margin-top: 60px;
 .pane-vista-slideshow-programas {
 height: 200px;
 margin-left: 60px;
+margin-top: 80px;
 }
 
 /**Caja de Envio CV **/
@@ -519,25 +520,33 @@ margin-left: 48px;
 .caja-envio-cv #edit-submitted-adjuntar-el-cv-upload-button  {
 border: 0;
 font-size:0pt;
-margin-top: -15px;
 background: none;
 background: transparent url("../images/btn_envio_cv.png") no-repeat center top;
 overflow: hidden;
-height: 55px;
+height: 60px;
 width: 50px;
 }
 
+/**
 .caja-envio-cv .cv-adjunto .form-file  {
-border: 0;
-font-size:0pt;
-float: left;
-background: none;
-background:  url("../images/buscar.png") no-repeat center top;
-cursor:pointer;
-width: 134px;
-height: 30px;
-}
+background: transparent  url("../images/buscar.png") no-repeat center center;
 
+}
+**/
+
+.caja-envio-cv .cv-adjunto .form-file  {
+padding: 10px 15px 11px !important;
+font-size: 14px !important;
+background-color: #4d8a43;
+border-radius: 5px;
+-moz-border-radius: 5px;
+-webkit-border-radius: 5px;
+cursor: pointer;
+box-shadow: 0 1px 0 rgba(255, 255, 255, 0.5) inset;
+-moz-box-shadow: 0 1px 0 rgba(255, 255, 255, 0.5) inset;
+-webkit-box-shadow: 0 1px 0 rgba(255, 255, 255, 0.5) inset;
+width: 260px;
+}
 
 .caja-envio-cv .webform-submit    {
 margin-left: 240px;
@@ -546,11 +555,12 @@ border: 0;
 font-size:0pt;
 float: left;
 background: none;
-background: transparent url("../images/btn_enviar.png") no-repeat center top;
+background:  url("../images/btn_enviar.png") no-repeat center center;
 overflow: hidden;
 height: 45px;
 width: 99px;
 }
+
 
 .caja-envio-cv .webform-submit:hover    {
 background: transparent url("../images/btn_enviar_hover.png") no-repeat center top;
@@ -887,38 +897,35 @@ display:none;
 
 /** PAGINA SELECCION DE PERSONAL **/
 
+.bajada-seleccion-personal,
+.capacitacion-corporativa-bajada {
+ font-size: 1.6em;
+ margin-left: 80px;
+}
 
 
-
-.bajada-seleccion-personal .node-imagen-con-bajada {
- width: 1220px;
+.bajada-seleccion-personal  .pane-title,
+.capacitacion-corporativa-bajada  .pane-title{
+ color: #4d8a43;
 }
  
-
-.bajada-seleccion-personal .node-imagen-con-bajada .field-name-body {
-  font-size: 1.6em;
-  margin-left: 290px;
-  text-align: center;
-  margin-top: -130px;
-  width: 430px;
-}
-
-
 .bajada-seleccion-personal .pane-title {
-    background: url("../images/diplomatura_bg.png") no-repeat scroll 0 0 rgba(0, 0, 0, 0);
-    color: rgb(255, 255, 255);
-    height: 95px;
-    margin-left: 40px;
-    margin-top: -40px;
-    padding: 25px 80px;
-    width: 358px;
+   background: url("../images/diplomatura_bg.png") no-repeat scroll left center rgba(0, 0, 0, 0);
+   color: rgb(255, 255, 255);
+   height: 75px;
+   margin-left: -90px;
+   padding-left: 80px;
 }
+
 .bajada-seleccion-personal .node-imagen-con-bajada img {
-margin-left: 750px;
+ margin-left: 670px;
  }
 
-.principal-seleccion-personal .node-imagen-con-bajada {
- width: 1220px;
+.bajada-seleccion-personal .node-imagen-con-bajada .field-name-body {
+    margin-left: 240px;
+    margin-top: -150px;
+    text-align: justify;
+    width: 430px;
 }
 
 .principal-seleccion-personal {
@@ -933,57 +940,44 @@ margin-left: 750px;
 
  .principal-seleccion-personal .field-item img {
   float: left;
+    margin-left: 30px;
+
  }
 
 
-/** CAPACITACION CORPORATIVA **/
-
-
-.capacitacion-corporativa-bajada .pane-title {
- margin-top: 100px;
- color: #4d8a43;
- font-size: 1.6em;
- margin-left: -40px;
- margin-top: 110px;
-}
-
+/** CAPACITACION CORPORATIVA**/
 
 .capacitacion-corporativa-bajada img {
- margin-left: -200px;
+ margin-left: 80px;
  margin-top: -120px;
-
-}
-.capacitacion-corporativa-bajada   {
- font-size: 1.6em;
- margin-left: 290px;
- text-align: justify;
- margin-top: -100px;
- width: 430px;
 }
 
-
-.capacitacion-corporativa-bajada  .field-name-body {
-  text-align: center;
-  margin-top: -50px;
+.capacitacion-corporativa-bajada  .pane-title{
+margin-left: 210px;
 }
 
-.principal-capacitacion-coporativa {
+.capacitacion-corporativa-bajada .field-name-body {
+    margin-left: 300px;
+    margin-top: -40px;
+    text-align: center;
+    width: 430px;
+}
  
-}
-
-
 .principal-capacitacion-coporativa .node-imagen-con-bajada .field-name-body {
   float: left;
-  margin-left: 40px;
+  margin-left: 90px;
   margin-top: -360px;
   text-align: justify;
   width: 400px;
 }
 
 .principal-capacitacion-coporativa .field-item img {
-   margin-left: 470px;
+   margin-left: 520px;
  }
 
+
+
+/**CONTACTO CONSULTORIA **/
 
  .panel-ubicacion-consultoria .pane-title {
   color: #4d8a43;
@@ -1006,7 +1000,7 @@ margin-left: 250px;
   color: #4d8a43;
 }
 
-/** CONTACTO CONSULTORIA **/
+/** FORMULARIO CONTACTO CONSULTORIA **/
 
 .contacto-consultoria {
  padding: 0 80px;
@@ -1019,7 +1013,6 @@ color: #4d8a43;
 .contacto-consultoria .form-textarea-wrapper {
   background: none transparent;
 }
-
 
 .contacto-consultoria .form-submit {
     background: url("../images/btn_enviar.png") no-repeat scroll center top transparent;
@@ -1094,6 +1087,7 @@ margin-left: 200px;
     text-align: justify;
     margin-left: 200px;
     margin-top: -140px;
+    width: 580px;
 }
 
  
@@ -1110,8 +1104,10 @@ color: #1d639a;
 
 .pane-vista-slideshow-capacitacion  {
 padding-left: 60px;
-
+margin-top: 80px;
 }
+
+
 /** BLOQUE NOVEDADES DE LA HOME DE CAPACITACION **/
 
 .pane-bloque-novedades h2 {
@@ -1188,43 +1184,43 @@ background-image: url("../images/info_capacitacion_over.png");
 /** DIPLOMATURAS **/
 
 
- 
-.diplomaturas-bajada .pane-title {
- color: white; 
- background:  url("../images/diplomatura_bg.png") no-repeat -9px -9px ;
- width: 358px ;
- height: 95px;
+.diplomaturas-bajada,
+.cursos-tecnicos-bajada,
+.programas-ejecutivos-bajada   {
+ font-size: 1.6em;
+ margin-left: 80px;
+ margin-top: -30px;
 }
  
+.diplomaturas-bajada .pane-title {
+   background: url("../images/diplomatura_bg.png") no-repeat scroll left center rgba(0, 0, 0, 0);
+   color: rgb(255, 255, 255);
+   height: 75px;
+   margin-left: -90px;
+   padding-left: 80px;
 
+}
+ 
 .diplomaturas-bajada img {
-margin-left: 750px;
+margin-left: 700px;
 margin-top: -40px;
 }
 
 
-
 .principal-diplomaturas .field-name-body {
-    margin-left: 40px;
-    margin-top: -200px;
+    margin-left: 80px;
+    margin-top: -220px;
     text-align: justify;
     width: 400px;
 }
 
 .principal-diplomaturas .field-item img {
-   margin-left: 490px;
+   margin-left: 520px;
    vertical-align: middle;
  }
 
 
 /** CURSOS TECNICOS **/
-
-.diplomaturas-bajada,
-.cursos-tecnicos-bajada,
-.programas-ejecutivos-bajada   {
- margin-top: -40px;
- font-size: 1.6em;
-}
 
 .cursos-tecnicos-bajada h2,
 .programas-ejecutivos-bajada h2 {
@@ -1234,37 +1230,41 @@ margin-top: -40px;
 .cursos-tecnicos-bajada .field-name-body,
 .programas-ejecutivos-bajada .field-name-body {
  text-align: center;
+ width: 400px;
+ margin-left: 240px;
 }
 
+
 .principal-cursos-tecnicos .field-name-body {
-    margin-left: 40px;
-    margin-top: 40px;
+    margin-left: 80px;
+    margin-top: -120px;
     text-align: justify;
     width: 400px;
 }
 
 .principal-cursos-tecnicos .field-item img {
-   margin-left: 470px;
+   margin-left: 520px;
    vertical-align: middle;
  }
+ 
+
+/** PROGRAMAS EJECUTIVOS **/
 
 
-/** PROGRAMAS EJECUTIVOS CONTENIDO PRINCIPAL**/
+.imagen-programas-ejecutivos {
+vertical-align: top;
+
+}
+
+ .principal-programas-ejecutivos .group-left {
+  text-align: justify;
+  margin-left: 80px;
+  width: 400px;
+
+}
 
 
  
-.principal-programas-ejecutivos .node-imagen-con-bajada .field-name-body {
-    margin-left: 40px;
-    margin-top: -240px;
-    text-align: justify;
-    width: 400px;
-}
-
-.principal-programas-ejecutivos .field-item img {
-   margin-left: 470px;
-   vertical-align: middle;
- }
-
 /** NOVEDADES CAPACITACION **/
 
 .imagen-header-novedades {
