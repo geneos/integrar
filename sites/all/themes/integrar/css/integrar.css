@@ -12,8 +12,9 @@ font-size: 87%;
 }
 
 #content h2 {
-  font-family: 'Open Sans ', sans-serif;
+  font-family: 'Open Sans Condensed', sans-serif;
   font-stretch: ultra-condensed;
+  font-size:36px;
 } 
 
 /** HEADER **/
@@ -27,18 +28,35 @@ margin-top: 30px;
   margin-bottom: 0px;
 }
 
-.contexto-inicio #logo img {
+/*	Pablo
+	cambio la regla css para que afecte solamente al link, y la imagen la retiro. De esa forma el background va sobre el link
+	y no sobre otra imagen que esta mal.
+
+*/
+
+#logo {
+	padding:0px;
+	margin: 15px 15px 15px 10px;
+}
+
+#logo {
+	height:68px;
+	width:311px;
+}
+
+.contexto-inicio #logo {
   background-image: url("../images/integrar_recursos.png");
   background-repeat: no-repeat;
 }
 
-.contexto-consultoria #logo img {
+
+.contexto-consultoria #logo {
   background-image: url("../images/integrar_recursos.png");
     background-repeat: no-repeat;
 
 }
 
-.contexto-capacitacion #logo img {
+.contexto-capacitacion #logo {
   background-image: url("../images/integrar_capacitacion.png");
 }
 
@@ -46,6 +64,10 @@ margin-top: 30px;
   background: #fff;
   width: 1015px;
   left: -50px;
+}
+
+.page-inicio .region-content {
+  min-height: 300px;
 }
 
  body {
@@ -79,7 +101,7 @@ display: none;
 }
 
 .region-header .block-menu {
-  width:535px; 
+  width:auto; 
   margin:0px;
 }
 
@@ -92,6 +114,10 @@ display: none;
 }
 
 .region-header .block-menu .menu li:hover{
+  z-index:3;
+}
+
+.region-header .block-menu .menu li.active-trail{
   z-index:2;
 }
 
@@ -127,7 +153,7 @@ display: none;
 }
 
 .contexto-consultoria .region-header .block-menu .menu li a:hover,
-.contexto-consultoria .region-header .block-menu .menu li a:active {
+.contexto-consultoria .region-header .block-menu .menu li a.active {
 color: #fff;
 background: none;
 background-image: -webkit-gradient.    linear,
@@ -146,7 +172,7 @@ z-index:500 !important;
 }
 
 .contexto-capacitacion .region-header .block-menu .menu li a:hover,
-.contexto-capacitacion .region-header .block-menu .menu li a:active  {
+.contexto-capacitacion .region-header .block-menu .menu li a.active  {
 color: #fff;
 background: none;
  background-image: -webkit-gradient(
@@ -161,8 +187,6 @@ background-image: -moz-linear-gradient(bottom, #1D68A1 39%, #1B364A 100%);
 background-image: -webkit-linear-gradient(bottom, #1D68A1 39%, #1B364A 100%);
 background-image: -ms-linear-gradient(bottom, #1D68A1 39%, #1B364A 100%);
 background-image: linear-gradient(to bottom, #1D68A1 39%, #1B364A 100%);
-color: #fff;
-z-index:500 !important;
  }
 
  
@@ -222,11 +246,15 @@ z-index:500 !important;
 .caja-boton-home {
 width: 450px;
 margin-left: 100px ;
-opacity: 0.8;
-filter: alpha(opacity=80); /* For IE8 and earlier */
+
 }
 
-.caja-boton-home:hover   {
+.caja-boton-home a img {
+  opacity: 0.8;
+  filter: alpha(opacity=80); /* For IE8 and earlier */
+}
+
+.caja-boton-home a img:hover   {
   opacity: 1;
   filter: alpha(opacity=100); /* For IE8 and earlier */
 }
@@ -270,7 +298,7 @@ font-weight: bold;
 
 .inicio-caja-bajada p {
 text-align: center;
-margin-top: -25px;
+margin-top: -40px;
 }
 
 
@@ -336,24 +364,35 @@ float: left;
 /** Caja con imagen bajada (abajo del slider) **/
 
 .caja-consultoria {
-width: 1600px;
+width:900px;
 margin-left: 80px ;
 margin-right: auto ;
 }
+
+
+.caja-consultoria .ds-2col > .group-left {
+	width:100%;
+}
+
 
 .caja-consultoria h2 {
 display: none;
 }
 
+.caja-consultoria .field-name-field-imagen-bajada img{
+	float:left;
+}
+
 .caja-consultoria .field-name-body {
     text-align: justify;
-    margin-left: 200px;
-    margin-top: -144px;
+    margin-left:190px;
+    margin-top:15px;
 }
+
 
 .caja-consultoria .field-name-body .bajada-consultoria-bold {
   font-weight: bold;
-  color: #4d8a43;
+  color: #4d8a43; 
 }
  
 
@@ -375,7 +414,7 @@ position: absolute;
     left: -100px;
     opacity: 1;
     position: absolute;
-    top: 0px;
+    top: -20px;
     width: 22px;
 }
 
@@ -389,7 +428,7 @@ position: absolute;
     left: 180px;
     opacity: 1;
     position: absolute;
-    top: 0px;
+    top: -20px;
     width: 22px;
 }
 
@@ -470,14 +509,9 @@ color: #1d639a;
 .pane-vista-slideshow-valores {
 height: 200px;
 margin-left: 80px;
-margin-top: 60px;
+margin-top: 0px;
 }
 
-.pane-vista-slideshow-programas {
-height: 200px;
-margin-left: 60px;
-margin-top: 80px;
-}
 
 /**Caja de Envio CV **/
 
@@ -503,7 +537,8 @@ padding: 40px 0 0 40px;
 
 .caja-envio-cv h2 {
 color: #fff;
-margin-left: 48px;
+margin-left: 35px;
+margin-top: 0;
 }
 
 
@@ -590,23 +625,25 @@ margin-right: auto ;
 
 .view-mision-valores .titulo-vision-valores {
 color: #4d8a43;
-font-weight: 700;
+font-family: 'Open Sans Condensed', sans-serif;
 margin-left: 80px;
 margin-top: -70px;
 }
 
 .view-mision-valores .bajada-vision-valores {
 color: #cbcbcc;
-font-weight: 600;
+font-family: 'Open Sans Condensed', sans-serif;
+font-size: 20px;
 margin-left: 80px;
-margin-top: -5px;
+margin-top: -12px;
 }
 
 .view-mision-valores p {
 margin-left: 120px;
 text-align: left;
 color: black;
-width: 720px
+width: 720px;
+font-size: 12px;
 }
 
 /** PANEL BUSQUEDAS EN LA HOME DE CONSULTORIA **/
@@ -626,12 +663,23 @@ margin-top: 100px;
 text-transform: capitalize;
 margin-left: 0px;
 color: #4d8a43;
+margin-top:20px;
 }
 
 .panel-busquedas a {
 text-transform: none;
 color: inherit;
 }
+
+.panel-busquedas .views-field-body {
+font-size: 12px;
+}
+
+.panel-busquedas .ver-mas-link {
+margin-top: -5px;
+color: #4d8a43;
+}
+
 
 .panel-busquedas  .views-slideshow-controls-text-next {
   background-image: url("../images/right-01.png");
@@ -644,7 +692,7 @@ color: inherit;
   position: absolute;
   width: 22px;
   left: 220px;
-  top: 0px;
+  top: -40px;
 }
 
 .panel-busquedas  .views-slideshow-controls-text-previous {
@@ -658,7 +706,7 @@ color: inherit;
   position: absolute;
   width: 22px;
   left: -150px;
-  top: 0px;
+  top: -40px;
 }
 
 
@@ -689,7 +737,9 @@ text-align: justify;
 }
 
 .panel-capacitacion-corporativa h2 {
-color: #64B35F;
+color: #4d8a43;
+margin-top: 15px;
+
 }
 
 .panel-capacitacion-corporativa .field-name-field-enlace a {
@@ -901,6 +951,7 @@ display:none;
 .capacitacion-corporativa-bajada {
  font-size: 1.6em;
  margin-left: 80px;
+ padding-bottom: 20px;
 }
 
 
@@ -910,7 +961,7 @@ display:none;
 }
  
 .bajada-seleccion-personal .pane-title {
-   background: url("../images/diplomatura_bg.png") no-repeat scroll left center rgba(0, 0, 0, 0);
+   background: url("../images/seleccion_bg.png") no-repeat scroll left center rgba(0, 0, 0, 0);
    color: rgb(255, 255, 255);
    height: 75px;
    margin-left: -90px;
@@ -987,10 +1038,16 @@ margin-left: 210px;
 
 
 .panel-ubicacion-consultoria .node-imagen-con-bajada .field-name-body {
+  font-family: 'Open Sans Condensed', sans-serif;
   margin-left: -20px;
   text-align: left;
   margin-top: -140px;
-  width: 300px;
+}
+
+.panel-ubicacion-consultoria .node-imagen-con-bajada .field-name-body .field-items {
+  width: 260px;
+  padding-top: 20px;
+
 }
 
 .panel-ubicacion-consultoria .node-imagen-con-bajada img {
@@ -1071,23 +1128,31 @@ z-index:200;
 
 /** Caja con imagen bajada (abajo del slider) **/
 
+
+
+
+
 .caja-capacitacion {
 width: 800px;
 margin-left: auto ;
 margin-right: auto ;
-margin-top: -40px;
+margin-top: -60px;
 }
 
 .caja-capacitacion h2 {
 color: #114f79;
 font-weight: 700;
-margin-left: 200px;
+margin-left: 188px;
+}
+
+.caja-capacitacion .field-name-field-imagen-bajada img{
+	float:left;
 }
 
 .caja-capacitacion .field-name-body {
     text-align: justify;
-    margin-left: 200px;
-    margin-top: -140px;
+    margin-left:190px;
+    margin-top:20px;
     width: 580px;
 }
 
@@ -1103,11 +1168,17 @@ margin-left: 50px;
 color: #1d639a;
 }
 
-.pane-vista-slideshow-capacitacion  {
-padding-left: 60px;
-margin-top: 80px;
+
+.pane-vista-slideshow-programas {
+height: 200px;
+margin-left: 60px;
+margin-top: 0px;
 }
 
+.pane-vista-slideshow-capacitacion  {
+padding-left: 60px;
+margin-top: 0px;
+}
 
 /** BLOQUE NOVEDADES DE LA HOME DE CAPACITACION **/
 
@@ -1124,7 +1195,7 @@ background-position: 0px 0px;
 background-repeat: no-repeat;
 padding: 50px 60px 50px 60px;
 text-align: left;
-height: 330px;
+height: 150px;
 margin-left: 0px;
 }
 
@@ -1190,7 +1261,7 @@ background-image: url("../images/info_capacitacion_over.png");
 .programas-ejecutivos-bajada   {
  font-size: 1.6em;
  margin-left: 80px;
- margin-top: -30px;
+ margin-top: -60px;
 }
  
 .diplomaturas-bajada .pane-title {
@@ -1220,6 +1291,9 @@ margin-top: -40px;
    vertical-align: middle;
  }
 
+.principal-diplomaturas {
+  padding-bottom: 30px;
+}
 
 /** CURSOS TECNICOS **/
 
@@ -1235,16 +1309,19 @@ margin-top: -40px;
  margin-left: 240px;
 }
 
+.principal-cursos-tecnicos {
+	margin-top: 0px;
+}
 
 .principal-cursos-tecnicos .field-name-body {
     margin-left: 80px;
-    margin-top: -120px;
+    margin-top: -128px;
     text-align: justify;
     width: 400px;
 }
 
 .principal-cursos-tecnicos .field-item img {
-   margin-left: 520px;
+   margin-left: 560px;
    vertical-align: middle;
  }
  
@@ -1287,26 +1364,28 @@ color: #114f79;
 
 .view-novedades-capacitacion  .post-date {
 margin-left: 315px;
+margin-top:-40px;
+margin-bottom:20px;
 }
 
 .pane-novedades-diplomaturas .pane-title,
 .pane-novedades-programas-ejecutivos  .pane-title,
-.pane-novedades-cursos-tecnicos .pane-title {
+.pane-novedades-cursos-t-cnicos .pane-title {
   background-image: url("../images/base_top_capacitacion.png");
   background-repeat: no-repeat;
   display:block;
   margin-left: 50px;
   margin-top: 0px;
-  padding-top: 25px;
+  padding-top: 32px;
   padding-left: 20px;
-  padding-bottom: 20px;
+  padding-bottom: 32px;
   width: 560px;
 }
 
-.view-novedades-capacitacion .novedades-capacitacion-title {
-font-size: 1.2em;
-  margin-left: 20px;
-
+ .view-novedades-capacitacion .novedades-capacitacion-title {
+ font-size: 1.2em;
+ margin-left: 20px;
+ color: #114f79;
 }
 
 .view-novedades-capacitacion .view-content {
@@ -1314,12 +1393,13 @@ font-size: 1.2em;
  height: 400x;
 }
  
+
  .view-novedades-capacitacion .novedades-capacitacion-body {
   height: 165px;
   padding: 10px 10px 10px 10px;
  }
 
- .view-novedades-capacitacion   img {
+ .view-novedades-capacitacion img {
   background: transparent;
   margin-top: 20px;
   margin-left: 20px;
@@ -1332,23 +1412,25 @@ font-size: 1.2em;
   margin-left: 60px;
 }
 
+.view-novedades-capacitacion .ver-mas {
+  margin-top:-65px;
+ }
 
-.view-novedades-capacitacion  .ver-mas a {
-margin-left: 360px;
-background: transparent url("../images/btn_ver.png") no-repeat 0 -43px;
+.view-novedades-capacitacion .ver-mas a {
+margin-left: 385px;
+background: transparent url("../images/btn_ver.png") no-repeat 0 0px;
 font-size:0px;
 content:" ";
 color:transparent;
 display:block;
 position: relative;
-width: 70px;
+width: 78px;
 height: 45px;
 }
 
-.view-novedades-capacitacion  .ver-mas a:hover {
-background-position: 0px 0px;
+.view-novedades-capacitacion .ver-mas a:hover {
+background-position: 0px -45px;
 }
-
 
 .view-novedades-capacitacion .views_slideshow_cycle_main  {
 background-image: url("../images/top_caja_novedades1.png");
@@ -1358,7 +1440,7 @@ display: block;
 padding-left: 10px;
 width: 490px;
 z-index: 100;
-height: 300px;
+height: 220px;
 }
 
 .view-novedades-capacitacion .views-slideshow-controls-bottom {
@@ -1429,6 +1511,13 @@ opacity: 1;
   color: #114f79;
  }
 
+.pane-novedades-destacados-capacitacion .novedades-capacitacion-title {
+ font-size: 1.2em;
+ margin-left: 20px;
+ color: #114f79;
+}
+
+
 
 /** CONTACTO CAPACITACION **/
 
@@ -1468,10 +1557,16 @@ opacity: 1;
 
 
 .panel-ubicacion-capacitacion .node-imagen-con-bajada .field-name-body {
+  font-family: 'Open Sans Condensed', sans-serif;
   margin-left: 0px;
   text-align: left;
   margin-top: -140px;
-  width: 300px;
+}
+
+
+.panel-ubicacion-capacitacion  .node-imagen-con-bajada .field-name-body .field-items {
+  width: 260px;
+  padding-top: 30px;
 }
 
 .panel-ubicacion-capacitacion .node-imagen-con-bajada img {
