@@ -218,7 +218,7 @@ background-image: linear-gradient(to bottom, #1D68A1 39%, #1B364A 100%);
   display:block;
   height:91px;
   /** width:36px; esto es para que se vea oculto **/
-   width:156px;
+  width:136px;
   font-size: 0px;
   color:transparent;
   content:" ";
@@ -302,6 +302,7 @@ font-weight: bold;
 text-align: center;
 margin-top: -40px;
 padding-top: 30px;
+padding-bottom: 40px;
 }
 
 
@@ -413,7 +414,7 @@ position: absolute;
     display: block;
     font-size: 0;
     height: 35px;
-    left: -100px;
+    left: -120px;
     opacity: 1;
     position: absolute;
     top: -20px;
@@ -808,6 +809,10 @@ margin-top: 15px;
 display:none;
 }
 
+.pane-vista-busquedas .pager {
+    color: #4d8a43;
+}
+
 .pane-vista-busquedas .pager .pager-previous a {
     background-image: url("../images/left_consultoria.png");
     color: transparent;
@@ -871,6 +876,7 @@ display:none;
   text-align: left;
   width: 375px;
   top: -100px;
+  left: -500px;
 
  }
 
@@ -896,23 +902,29 @@ display:none;
 
  .panel-destacados {
   background-image: url("../images/base_destacados.png");
-  background-position: 40px 20px;
+  background-position: 40px 0px;
   background-repeat: no-repeat;
-  padding-top: 20px; 
   height: 310px; 
   width: 480px;
-  margin-top: 20px;
 }
 
 .panel-destacados .pane-title {
   color: #4d8a43;
   padding-left: 80px;
+  margin-top: 30px;
+  padding-top: 10px;
 
 }
 .panel-destacados .pane-content  {
   padding: 10px 0 0 110px;
   width: 300px;
 }
+
+.view-slideshow-para-busquedas .views-field-title a {
+  color: #4d8a43;
+}
+
+ 
 .panel-destacados   .views-slideshow-controls-text-previous {
     background-image: url("../images/left-01.png");
     color: transparent;
@@ -923,7 +935,7 @@ display:none;
     left: -140px;
     opacity: 1;
     position: absolute;
-    top: 0px;
+    top: -40px;
     width: 22px;
 }
 
@@ -937,10 +949,13 @@ display:none;
     left: 210px;
     opacity: 1;
     position: absolute;
-    top: 0px;
+    top: -40px;
     width: 22px;
 }
 
+.panel-destacados .ver-mas-link a {
+ color: #4d8a43;
+}
 
 /** PAGINA SELECCION DE PERSONAL **/
 
@@ -959,9 +974,10 @@ display:none;
 }
  
 .bajada-seleccion-personal .pane-title {
-   background: url("../images/seleccion_bg.png") no-repeat scroll left -5px rgba(0, 0, 0, 0);
+   background: url("../images/seleccion_bg.png") no-repeat scroll left center rgba(0, 0, 0, 0);
    color: rgb(255, 255, 255);
    height: 75px;
+   padding-top: 5px;
    margin-left: -90px;
    padding-left: 80px;
 }
@@ -1578,7 +1594,7 @@ opacity: 1;
 }
 
  .pane-novedades-destacados-capacitacion .pane-title {
-  padding-bottom: 30px;
+  padding-bottom: 10px;
  }
 
 .pane-novedades-destacados-capacitacion .pane-title ,
