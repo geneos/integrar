@@ -1007,8 +1007,6 @@ margin-left: 40px;
 margin-left: 140px;
 }
 
-
-
 .capacitacion-corporativa-bajada .field-name-body {
   margin-left: 300px;
   margin-top: -40px;
@@ -1027,16 +1025,13 @@ margin-left: 140px;
    margin-left: 20px;
    text-align: justify;
    width: 400px;
-
  }
 
 .imagen-capacitacion-corporativa img {
      margin-left: 20px;
-
 }
 
 /**CONTACTO CONSULTORIA **/
-
 
 .panel-ubicacion-consultoria {
    margin-top: -40px;
@@ -1147,10 +1142,6 @@ z-index:200;
 
 /** Caja con imagen bajada (abajo del slider) **/
 
-
-
-
-
 .caja-capacitacion {
 width: 800px;
 margin-left: auto ;
@@ -1175,8 +1166,6 @@ margin-left: 188px;
     width: 580px;
 }
 
- 
-
 .caja-capacitacion .bajada-capacitacion-bold {
   font-weight: bold;
  }
@@ -1190,7 +1179,6 @@ text-transform: capitalize;
 margin-left: 50px;
 color: #1d639a;
 }
-
 
 .pane-vista-slideshow-programas {
 height: 200px;
@@ -1206,20 +1194,14 @@ margin-top: 0px;
 /** BLOQUE NOVEDADES DE LA HOME DE CAPACITACION **/
 
 .pane-bloque-novedades h2 {
-text-transform: capitalize;
-margin-left: 50px;
+margin-left: 40px;
 color: #1d639a;
 }
 
 .pane-bloque-novedades {
-position: relative;
-background-image: url("../images/base_programas.png") ;
-background-position: 0px 0px;
-background-repeat: no-repeat;
-padding: 50px 60px 50px 60px;
-text-align: left;
-height: 150px;
-margin-left: 0px;
+width: 400px;
+height: 300px;  
+margin-left: 40px;
 }
 
 .pane-bloque-novedades .link-novedades a {
@@ -1273,6 +1255,62 @@ background-image: url("../images/info_capacitacion_over.png");
     opacity: 1;
     position: absolute;
     width: 22px;
+}
+
+
+.panel-programas-ejecutivos {
+background-image: url("../images/base_programas.png");
+background-repeat: no-repeat;
+background-position: 0 -5px;
+}
+
+.panel-programas-ejecutivos h2 {
+ color: #1d639a;
+ margin-left: 40px;
+}
+
+.panel-programas-ejecutivos .field-content {
+text-align: justify;
+width: 350px;
+margin-left: 40px;
+margin-bottom: 30px;
+}
+
+
+.panel-programas-ejecutivos .btn-info a {
+  background-image: url("../images/info_capacitacion.png");
+  background-repeat: no-repeat;
+  color: transparent;
+  content: " ";
+  display: block;
+  font-size: 0;
+  height: 38px;
+  margin-left: 320px;
+  margin-top: -40px;
+  opacity: 1;
+  padding-bottom: 50px;
+  width: 76px;
+}
+
+.panel-programas-ejecutivos  .btn-info:hover a {
+  background-image: url("../images/info_capacitacion_over.png");
+}
+
+.btn-info-novedades a {
+  font-size:0px;
+  content:" ";
+  color:transparent;
+  background-image: url("../images/info_capacitacion.png");
+  display:block;
+  width: 76px;
+  height: 38px;
+  margin-left: 360px;
+  margin-top: -220px;
+  opacity:1;
+}
+
+.btn-info-novedades:hover a {
+  background-image: url("../images/info_capacitacion_over.png");
 }
 
 
