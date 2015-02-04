@@ -959,7 +959,7 @@ display:none;
 }
  
 .bajada-seleccion-personal .pane-title {
-   background: url("../images/seleccion_bg.png") no-repeat scroll left center rgba(0, 0, 0, 0);
+   background: url("../images/seleccion_bg.png") no-repeat scroll left -5px rgba(0, 0, 0, 0);
    color: rgb(255, 255, 255);
    height: 75px;
    margin-left: -90px;
@@ -1358,9 +1358,10 @@ margin-top: -20px;
 margin-top: -20px;
 }
 
-.convenios-diplomaturas .pane-title {
-color: red;
-}
+.convenios-diplomaturas .pane-title,
+.cursos-tecnicos-convenios .pane-title{
+  color: #771212;
+} 
 
 
 /** CURSOS TECNICOS **/
@@ -1398,9 +1399,7 @@ color: red;
   margin-left: 80px;
 }
 
- .cursos-tecnicos-convenios {
-  color: red;
-}
+
 /** PROGRAMAS EJECUTIVOS **/
 
 
@@ -1593,6 +1592,7 @@ opacity: 1;
  font-size: 1.2em;
  color: #114f79;
  text-decoration: none;
+ padding-bottom: 20px;
 }
 
  
@@ -1727,6 +1727,14 @@ background: #114f79 url("../images/footer_capacitacion.jpg") top center no-repea
 .contexto-consultoria #footer-wrapper {
 background: #4a8948 url("../images/footer_consultoria.jpg") top center no-repeat;
     color: #fff;
+}
+
+.contexto-capacitacion #page-wrapper {
+background: #114f79;
+}
+
+.contexto-consultoria #page-wrapper {
+background: #4a8948;
 }
 
 .region-footer-firstcolumn {
