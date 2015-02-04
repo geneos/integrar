@@ -13,8 +13,7 @@ font-size: 87%;
 
 #content h2 {
   font-family: 'Open Sans Condensed', sans-serif;
-  font-stretch: ultra-condensed;
-  font-size:36px;
+  font-size:30px;
 } 
 
 /** HEADER **/
@@ -218,7 +217,8 @@ background-image: linear-gradient(to bottom, #1D68A1 39%, #1B364A 100%);
 #featured .block-menu ul li a{
   display:block;
   height:91px;
-  width:36px;
+  /** width:36px; esto es para que se vea oculto **/
+   width:156px;
   font-size: 0px;
   color:transparent;
   content:" ";
@@ -227,6 +227,7 @@ background-image: linear-gradient(to bottom, #1D68A1 39%, #1B364A 100%);
   -webkit-transition: width 1s, opacity 1s;
 }
 
+/** esto es para ocultarlo **/
 #featured .block-menu ul li a:hover{
   width:156px;
   opacity: 1;
@@ -285,6 +286,7 @@ margin-left: auto ;
 margin-right: auto ;
 top: 20px;
 text-align: center;
+
 }
 
 
@@ -299,6 +301,7 @@ font-weight: bold;
 .inicio-caja-bajada p {
 text-align: center;
 margin-top: -40px;
+padding-top: 30px;
 }
 
 
@@ -367,6 +370,7 @@ float: left;
 width:900px;
 margin-left: 80px ;
 margin-right: auto ;
+margin-top: -20px;
 }
 
 
@@ -389,13 +393,11 @@ display: none;
     margin-top:15px;
 }
 
-
 .caja-consultoria .field-name-body .bajada-consultoria-bold {
   font-weight: bold;
   color: #4d8a43; 
 }
  
-
 
 /** Controles para Sliders de Valores  **/
 
@@ -509,7 +511,6 @@ color: #1d639a;
 .pane-vista-slideshow-valores {
 height: 200px;
 margin-left: 80px;
-margin-top: 0px;
 }
 
 
@@ -533,6 +534,7 @@ padding: 40px 0 0 40px;
 
 .caja-envio-cv .form-item label {
  margin-top: -10px;
+ font-weight: normal;
 }
 
 .caja-envio-cv h2 {
@@ -562,12 +564,6 @@ height: 60px;
 width: 50px;
 }
 
-/**
-.caja-envio-cv .cv-adjunto .form-file  {
-background: transparent  url("../images/buscar.png") no-repeat center center;
-
-}
-**/
 
 .caja-envio-cv .cv-adjunto .form-file  {
 padding: 10px 15px 11px !important;
@@ -585,12 +581,12 @@ width: 260px;
 
 .caja-envio-cv .webform-submit    {
 margin-left: 240px;
-margin-top: -35px;
+margin-top: -30px;
 border: 0;
 font-size:0pt;
 float: left;
 background: none;
-background:  url("../images/btn_enviar.png") no-repeat center center;
+background:  url("../images/btn_enviar.png") no-repeat;
 overflow: hidden;
 height: 45px;
 width: 99px;
@@ -598,7 +594,7 @@ width: 99px;
 
 
 .caja-envio-cv .webform-submit:hover    {
-background: transparent url("../images/btn_enviar_hover.png") no-repeat center top;
+background: transparent url("../images/btn_enviar_hover.png") no-repeat;
 }
 
 .form-text {
@@ -608,6 +604,7 @@ width: 320px
 
 #webform-client-form-48 {
   padding-left: 26px;
+  padding-top: 10px;
 }
 
 
@@ -649,13 +646,13 @@ font-size: 12px;
 /** PANEL BUSQUEDAS EN LA HOME DE CONSULTORIA **/
 .panel-busquedas {
 background-image: url("../images/base_programas.png");
-background-position: 0px 30px;
+background-position: 0px 40px;
 background-repeat: no-repeat;
 padding: 30px 80px 0px 70px;
 text-align: justify;
-height: 250px;
+height: 270px;
 margin-left: 45px;
-margin-top: 100px;
+margin-top: 110px;
 }
 
 
@@ -672,7 +669,7 @@ color: inherit;
 }
 
 .panel-busquedas .views-field-body {
-font-size: 12px;
+text-align: justify;
 }
 
 .panel-busquedas .ver-mas-link {
@@ -723,7 +720,7 @@ color: #4d8a43;
   color: #4d8a43;
   }
 
-/**CAPACITACION CORPORATIVA **/
+/** PANEL CAPACITACION CORPORATIVA **/
 
 .panel-capacitacion-corporativa {
 /**background-image: url("../images/base_programas.png");
@@ -731,18 +728,17 @@ background-position: 0px 30px;
 background-repeat: no-repeat;
 text-align: left;
 padding-top: 80px;**/
-width: 390px;
-margin-left: 20px;
+width: 350px;
+margin-left: 40px;
 text-align: justify;
 }
 
 .panel-capacitacion-corporativa h2 {
 color: #4d8a43;
 margin-top: 15px;
-
 }
 
-.panel-capacitacion-corporativa .field-name-field-enlace a {
+.panel-capacitacion-corporativa .btn-info a {
   font-size:0px;
   content:" ";
   color:transparent;
@@ -750,17 +746,16 @@ margin-top: 15px;
   display:block;
   width: 76px;
   height: 38px;
-  margin-left: 315px;
-  margin-top: -20px;
+  margin-left: 280px;
+  margin-top: -10px;
   opacity:1;
 }
 
-.panel-capacitacion-corporativa .field-name-field-enlace:hover a {
+.panel-capacitacion-corporativa .btn-info:hover a {
   background-image: url("../images/info_consultoria_over.png");
 }
-
-
-
+ 
+/** FIN HOME CONSULTORIA **/ 
 
 /** BUSQUEDAS LABORALES **/
 
@@ -772,7 +767,8 @@ margin-top: 15px;
 
 .pane-vista-busquedas .pane-title {
  color: #4d8a43;
- margin-left: 7px;
+ margin-top: -40px;
+ margin-left: -10px;
 }
 
 .pane-vista-busquedas .views-row {
@@ -799,7 +795,6 @@ margin-top: 15px;
 
 .pane-vista-busquedas .views-field-body {
   width: 780px
-
 }
 
  
@@ -813,9 +808,7 @@ margin-top: 15px;
 display:none;
 }
 
-
-
- .pane-vista-busquedas .pager .pager-previous a {
+.pane-vista-busquedas .pager .pager-previous a {
     background-image: url("../images/left_consultoria.png");
     color: transparent;
     content: " ";
@@ -828,7 +821,6 @@ display:none;
     height: 13px;
     margin-left: 350px;
     margin-top: -15px;
-
 }
 
 .pane-vista-busquedas .pager .pager-next a {
@@ -878,7 +870,6 @@ display:none;
   position: relative;
   text-align: left;
   width: 375px;
-  left: -500px;
   top: -100px;
 
  }
@@ -893,6 +884,12 @@ display:none;
 }
 
 
+/** PONE TODO EL FONDO EN TRANSPARENTE CUANDO ABRE EL POPUP **/
+.panel-display   {
+ /** opacity: 0.7; **/
+ }
+
+ 
 
 /** PANEL SLIDESHOW DESTACADOS en BUSQUEDAS LABORALES **/
 
@@ -950,8 +947,9 @@ display:none;
 .bajada-seleccion-personal,
 .capacitacion-corporativa-bajada {
  font-size: 1.6em;
- margin-left: 80px;
  padding-bottom: 20px;
+ margin-left: 80px;
+ margin-top: -60px;
 }
 
 
@@ -975,7 +973,7 @@ display:none;
 .bajada-seleccion-personal .node-imagen-con-bajada .field-name-body {
     margin-left: 240px;
     margin-top: -150px;
-    text-align: justify;
+    text-align: center;
     width: 430px;
 }
 
@@ -999,36 +997,51 @@ display:none;
 /** CAPACITACION CORPORATIVA**/
 
 .capacitacion-corporativa-bajada img {
- margin-left: 80px;
- margin-top: -120px;
+ margin-top: -60px;
+width: 20%;
+height: 20%;
+margin-left: 40px;
 }
 
 .capacitacion-corporativa-bajada  .pane-title{
-margin-left: 210px;
+margin-left: 140px;
 }
 
+
+
 .capacitacion-corporativa-bajada .field-name-body {
-    margin-left: 300px;
-    margin-top: -40px;
-    text-align: center;
-    width: 430px;
+  margin-left: 300px;
+  margin-top: -40px;
+  text-align: center;
+  margin-bottom: -20px;
+  width: 430px;
 }
  
-.principal-capacitacion-coporativa .node-imagen-con-bajada .field-name-body {
-  float: left;
-  margin-left: 90px;
-  margin-top: -360px;
+.izquierda-capacitacion-corporativa .pane-content  {
+  margin-left: 80px;
   text-align: justify;
   width: 400px;
 }
 
-.principal-capacitacion-coporativa .field-item img {
-   margin-left: 520px;
+.derecha-capacitacion-corporativa .pane-content  {
+   margin-left: 20px;
+   text-align: justify;
+   width: 400px;
+
  }
 
+.imagen-capacitacion-corporativa img {
+     margin-left: 20px;
 
+}
 
 /**CONTACTO CONSULTORIA **/
+
+
+.panel-ubicacion-consultoria {
+   margin-top: -40px;
+
+}
 
  .panel-ubicacion-consultoria .pane-title {
   color: #4d8a43;
@@ -1038,7 +1051,7 @@ margin-left: 210px;
 
 
 .panel-ubicacion-consultoria .node-imagen-con-bajada .field-name-body {
-  font-family: 'Open Sans Condensed', sans-serif;
+  font-family: 'Open Sans', sans-serif;
   margin-left: -20px;
   text-align: left;
   margin-top: -140px;
@@ -1046,7 +1059,7 @@ margin-left: 210px;
 
 .panel-ubicacion-consultoria .node-imagen-con-bajada .field-name-body .field-items {
   width: 260px;
-  padding-top: 20px;
+  padding-top: 10px;
 
 }
 
@@ -1061,8 +1074,14 @@ margin-left: 220px;
 /** FORMULARIO CONTACTO CONSULTORIA **/
 
 .contacto-consultoria {
- padding: 0 80px;
+ margin-left: 80px;
+ margin-top: -40px;
 }
+
+.contacto-consultoria label {
+  font-weight: normal;
+}
+
 .contacto-consultoria .pane-title {
 color: #4d8a43;
  font-size: 1.6em;
@@ -1136,7 +1155,7 @@ z-index:200;
 width: 800px;
 margin-left: auto ;
 margin-right: auto ;
-margin-top: -60px;
+margin-top: -20px;
 }
 
 .caja-capacitacion h2 {
@@ -1152,7 +1171,7 @@ margin-left: 188px;
 .caja-capacitacion .field-name-body {
     text-align: justify;
     margin-left:190px;
-    margin-top:20px;
+    margin-top: 0px;
     width: 580px;
 }
 
@@ -1160,6 +1179,10 @@ margin-left: 188px;
 
 .caja-capacitacion .bajada-capacitacion-bold {
   font-weight: bold;
+ }
+
+.caja-capacitacion .bajada-capacitacion-color {
+  color: #114f79;
  }
 
 .pane-vista-slideshow-capacitacion h2 {
@@ -1281,19 +1304,26 @@ margin-top: -40px;
 
 .principal-diplomaturas .field-name-body {
     margin-left: 80px;
-    margin-top: -220px;
     text-align: justify;
     width: 400px;
 }
 
-.principal-diplomaturas .field-item img {
-   margin-left: 520px;
-   vertical-align: middle;
- }
-
 .principal-diplomaturas {
   padding-bottom: 30px;
 }
+
+.convenios-diplomaturas {
+margin-top: -20px;
+}
+
+.convenios-diplomaturas img {
+margin-top: -20px;
+}
+
+.convenios-diplomaturas .pane-title {
+color: red;
+}
+
 
 /** CURSOS TECNICOS **/
 
@@ -1306,33 +1336,40 @@ margin-top: -40px;
 .programas-ejecutivos-bajada .field-name-body {
  text-align: center;
  width: 400px;
- margin-left: 240px;
+ margin-top: 40px; 
+ margin-bottom: 40px; 
+ margin-left: 50%;
 }
 
-.principal-cursos-tecnicos {
-	margin-top: 0px;
-}
+
 
 .principal-cursos-tecnicos .field-name-body {
     margin-left: 80px;
-    margin-top: -128px;
+    margin-top: -20px;
     text-align: justify;
     width: 400px;
 }
 
-.principal-cursos-tecnicos .field-item img {
-   margin-left: 560px;
-   vertical-align: middle;
+.imagen-cursos-tecnicos  img {
+   margin-left: 80px;
+   margin-top: -50px;
  }
  
+ .cursos-tecnicos-convenios {
+  margin-top: -80px;
+  margin-left: 80px;
+}
 
+ .cursos-tecnicos-convenios {
+  color: red;
+}
 /** PROGRAMAS EJECUTIVOS **/
 
 
 .imagen-programas-ejecutivos {
-vertical-align: top;
+  margin-top: -30px;
 }
-
+ 
 .imagen-consulta-programas-ejecutivos {
   margin-left: 80px;
 }
@@ -1418,7 +1455,7 @@ margin-bottom:20px;
 
 .view-novedades-capacitacion .ver-mas a {
 margin-left: 385px;
-background: transparent url("../images/btn_ver.png") no-repeat 0 0px;
+background: transparent url("../images/ver+.png") no-repeat 0 -45px;
 font-size:0px;
 content:" ";
 color:transparent;
@@ -1429,7 +1466,7 @@ height: 45px;
 }
 
 .view-novedades-capacitacion .ver-mas a:hover {
-background-position: 0px -45px;
+background-position: 0px 0px;
 }
 
 .view-novedades-capacitacion .views_slideshow_cycle_main  {
@@ -1479,7 +1516,7 @@ height: 220px;
 }
 
 .view-novedades-capacitacion .views-slideshow-controls-bottom .views-slideshow-pager-fields {
-margin-left: 50px;
+margin-left: 35px;
 margin-bottom: 10px;
 }  
 
@@ -1503,7 +1540,10 @@ opacity: 1;
   margin-left: 150px;
 }
 
- 
+ .pane-novedades-destacados-capacitacion .pane-title {
+  padding-bottom: 30px;
+ }
+
 .pane-novedades-destacados-capacitacion .pane-title ,
 .pane-novedades-diplomaturas .pane-title ,
 .pane-novedades-cursos-tecnicos .pane-title ,
@@ -1513,17 +1553,23 @@ opacity: 1;
 
 .pane-novedades-destacados-capacitacion .novedades-capacitacion-title {
  font-size: 1.2em;
- margin-left: 20px;
  color: #114f79;
+ text-decoration: none;
 }
 
-
+ 
 
 /** CONTACTO CAPACITACION **/
 
 .contacto-capacitacion {
- padding: 0 80px;
+margin-top: -40px;
+margin-left: 80px;
 }
+
+.contacto-capacitacion label {
+  font-weight: normal;
+}
+
 
 .contacto-capacitacion .pane-title {
  color: #114f79;
@@ -1550,6 +1596,10 @@ opacity: 1;
 }
 
 
+ .panel-ubicacion-capacitacion {
+  margin-top: -40px;
+ }
+
  .panel-ubicacion-capacitacion .pane-title {
   color: #114f79;
   font-size: 1.6em;
@@ -1557,7 +1607,7 @@ opacity: 1;
 
 
 .panel-ubicacion-capacitacion .node-imagen-con-bajada .field-name-body {
-  font-family: 'Open Sans Condensed', sans-serif;
+  font-family: 'Open Sans', sans-serif;
   margin-left: 0px;
   text-align: left;
   margin-top: -140px;
@@ -1566,7 +1616,7 @@ opacity: 1;
 
 .panel-ubicacion-capacitacion  .node-imagen-con-bajada .field-name-body .field-items {
   width: 260px;
-  padding-top: 30px;
+  padding-top: 10px;
 }
 
 .panel-ubicacion-capacitacion .node-imagen-con-bajada img {
@@ -1582,7 +1632,7 @@ margin-left: 250px;
 
 .node-mapa-de-ubicacion {
 position: relative;
-top: -30px;
+top: -40px;
 z-index: 100;
 }
 
