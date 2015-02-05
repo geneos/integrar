@@ -745,7 +745,7 @@ text-align: justify;
   background-image: url("../images/base_busqueda_laboral.png");
   background-position: 0px 0px;
   background-repeat: no-repeat;
-  padding-top: 20px; 
+  padding-top: 30px; 
   height: 250px;
 }
 
@@ -753,9 +753,9 @@ text-align: justify;
 .pane-vista-busquedas .views-label-field-empresa,
 .pane-vista-busquedas .views-label-field-zona,
 .pane-vista-busquedas .views-field-body {
-  padding-left: 40px; 
-
-}
+  text-align: justify;
+  margin-left: 60px;
+ } 
 
 .pane-vista-busquedas .views-field-title,
 .pane-vista-busquedas .views-label-field-empresa,
@@ -764,7 +764,7 @@ text-align: justify;
 }
 
 .pane-vista-busquedas .views-field-body {
-  width: 780px
+  width: 720px
 }
 
 
@@ -844,7 +844,7 @@ text-align: justify;
   text-align: left;
   width: 375px;
   top: -100px;
-  left: -500px;
+  left: -420px;
 
 }
 
@@ -858,8 +858,8 @@ text-align: justify;
 }
 
 /** PONE TODO EL FONDO EN TRANSPARENTE CUANDO ABRE EL POPUP **/
-.panel-display   {
- /** opacity: 0.7; **/
+.page-consultoria-busquedas-laborales .pane-content {
+/* opacity: 0.5; */
 }
 
 

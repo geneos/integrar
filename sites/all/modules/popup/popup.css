@@ -9,7 +9,8 @@
 .popup-element-body{ display: none; position: absolute; text-align: left;}
 .popup-element-body a.popup-close-button{ cursor: pointer; float: right;}
 
-#popup-active-overlay{ position: absolute; z-index: 2000; top: 0; left: 0;}
+#popup-active-overlay{ position: absolute; z-index: 2000; top: 0; left: -90px;}
+
 
 table.popup-layout{ border: none;}
 
