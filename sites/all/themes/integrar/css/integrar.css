@@ -565,11 +565,19 @@ height: 60px;
 width: 50px;
 }
 
+.caja-envio-cv #edit-submitted-adjuntar-el-cv-remove-button {
+border: 0;
+font-size:0pt;
+background: none;
+background: transparent url("../images/btn_borrar.png") no-repeat center top;
+overflow: hidden;
+height: 50px;
+width: 100px;  
+}
 
 .caja-envio-cv .cv-adjunto .form-file  {
 padding: 10px 15px 11px !important;
 font-size: 14px !important;
-background-color: #4d8a43;
 border-radius: 5px;
 -moz-border-radius: 5px;
 -webkit-border-radius: 5px;
@@ -1100,6 +1108,7 @@ color: #4d8a43;
 
 .contacto-consultoria .form-textarea-wrapper {
   background: none transparent;
+  width: 330px;
 }
 
 .contacto-consultoria .form-submit {
@@ -1108,7 +1117,7 @@ color: #4d8a43;
     float: left;
     font-size: 0;
     height: 45px;
-    margin-left: 120px;
+    margin-left: 110px;
     overflow: hidden;
     width: 99px;
 }
@@ -1312,11 +1321,12 @@ margin-bottom: 30px;
   background-image: url("../images/info_capacitacion_over.png");
 }
 
-.btn-info-novedades a {
+.btn-info-novedades .field-content a  {
   font-size:0px;
   content:" ";
   color:transparent;
   background-image: url("../images/info_capacitacion.png");
+  background-repeat: no-repeat;
   display:block;
   width: 76px;
   height: 38px;
@@ -1400,34 +1410,27 @@ margin-top: -20px;
 
 .principal-cursos-tecnicos .field-name-body {
     margin-left: 80px;
-    margin-top: -20px;
     text-align: justify;
     width: 400px;
 }
 
-.imagen-cursos-tecnicos  img {
-   margin-left: 80px;
-   margin-top: -50px;
- }
- 
- .cursos-tecnicos-convenios {
-  margin-top: -80px;
-  margin-left: 80px;
+.cursos-tecnicos-convenios {
+  margin-top: -40px;
 }
 
+.view-consulta-cursos-tecnicos {
+margin-top: 20px;
+margin-left: 80px;
+
+}
 
 /** PROGRAMAS EJECUTIVOS **/
 
-
-.imagen-programas-ejecutivos {
-  margin-top: -30px;
-}
- 
 .imagen-consulta-programas-ejecutivos {
-  margin-left: 80px;
+  margin-left: 40px;
 }
 
-.principal-programas-ejecutivos .group-left {
+.principal-programas-ejecutivos   {
  text-align: justify;
  margin-left: 80px;
  width: 400px;
@@ -1611,7 +1614,10 @@ opacity: 1;
  padding-bottom: 20px;
 }
 
- 
+.pane-novedades-destacados-capacitacion .fecha-inicio {
+  text-align: right;
+
+}
 
 /** CONTACTO CAPACITACION **/
 
@@ -1631,6 +1637,7 @@ margin-left: 80px;
 
 .contacto-capacitacion .form-textarea-wrapper {
   background: none transparent;
+  width: 330px;
 }
 
 
@@ -1640,13 +1647,15 @@ margin-left: 80px;
     float: left;
     font-size: 0;
     height: 45px;
-    margin-left: 120px;
+    margin-left: 115px;
     overflow: hidden;
     width: 99px;
+    opacity: 1;
   }
 
 .contacto-capacitacion .form-submit:hover {
-  background: url("../images/btn_enviar_hover.png") no-repeat scroll center top transparent;
+    background: url("../images/btn_enviar_cap.png") no-repeat scroll center top transparent;
+    opacity: 0.8;
 }
 
 
