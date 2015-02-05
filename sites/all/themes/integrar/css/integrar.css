@@ -6,9 +6,9 @@
 
 
 body {
-font-family: 'Open Sans', sans-serif;
-margin-left: -60px;
-font-size: 87%;
+  font-family: 'Open Sans', sans-serif;
+  margin-left: -60px;
+  font-size: 87%;
 }
 
 #content h2 {
@@ -18,29 +18,23 @@ font-size: 87%;
 
 /** HEADER **/
 #header {
-background: url("../images/header.png") top center no-repeat;
-margin-left: 83px;
-margin-top: 30px;
+  background: url("../images/header.png") top center no-repeat;
+  margin-left: 83px;
+  margin-top: 30px;
 }
 
 #main {
   margin-bottom: 0px;
 }
 
-/*	Pablo
-	cambio la regla css para que afecte solamente al link, y la imagen la retiro. De esa forma el background va sobre el link
-	y no sobre otra imagen que esta mal.
-
-*/
-
 #logo {
-	padding:0px;
-	margin: 15px 15px 15px 10px;
+ padding:0px;
+ margin: 15px 15px 15px 10px;
 }
 
 #logo {
-	height:68px;
-	width:311px;
+ height:68px;
+ width:311px;
 }
 
 .contexto-inicio #logo {
@@ -51,7 +45,7 @@ margin-top: 30px;
 
 .contexto-consultoria #logo {
   background-image: url("../images/integrar_recursos.png");
-    background-repeat: no-repeat;
+  background-repeat: no-repeat;
 
 }
 
@@ -69,34 +63,33 @@ margin-top: 30px;
   min-height: 300px;
 }
 
- body {
-      background-image: url("../images/bg_background.jpg");
-
- }
+body {
+  background-image: url("../images/bg_background.jpg");
+}
 
 /** FONDO PAGINA COMPLETA **/
 
 #page, #main-wrapper { 
   background-image: url("../images/bg_background.jpg");
 }
-  
+
 /** BREADCRUMB **/
 .breadcrumb {
-display: none;
+  display: none;
 }
 
 /** HOME **/
 
 #page-inicio {
   margin-top: -30px;
-   padding-bottom: 30px;
+  padding-bottom: 30px;
 }
 
 /** MENU PRINCIPAL SEGUN CONTEXTO CONSULTORIA/CAPACITACION **/
 
 #header .region-header {
-    margin: 90px 0 0;
-    height: 60px; 
+  margin: 90px 0 0;
+  height: 60px; 
 }
 
 .region-header .block-menu {
@@ -153,14 +146,14 @@ display: none;
 
 .contexto-consultoria .region-header .block-menu .menu li a:hover,
 .contexto-consultoria .region-header .block-menu .menu li a.active {
-color: #fff;
-background: none;
-background-image: -webkit-gradient.    linear,
-    left top,
-    left bottom,
-    color-stop(0.39, #64B35F),
-    color-stop(0.63, #4D8A43)
-);
+  color: #fff;
+  background: none;
+  background-image: -webkit-gradient.    linear,
+  left top,
+  left bottom,
+  color-stop(0.39, #64B35F),
+  color-stop(0.63, #4D8A43)
+  );
 background-image: -o-linear-gradient(bottom, #64B35F 39%, #4D8A43 63%);
 background-image: -moz-linear-gradient(bottom, #64B35F 39%, #4D8A43 63%);
 background-image: -webkit-linear-gradient(bottom, #64B35F 39%, #4D8A43 63%);
@@ -172,23 +165,23 @@ z-index:500 !important;
 
 .contexto-capacitacion .region-header .block-menu .menu li a:hover,
 .contexto-capacitacion .region-header .block-menu .menu li a.active  {
-color: #fff;
-background: none;
- background-image: -webkit-gradient(
+  color: #fff;
+  background: none;
+  background-image: -webkit-gradient(
     linear,
     left top,
     left bottom,
     color-stop(0.39, #1D68A1),
     color-stop(1, #1B364A)
-);
-background-image: -o-linear-gradient(bottom, #1D68A1 39%, #1B364A 100%);
-background-image: -moz-linear-gradient(bottom, #1D68A1 39%, #1B364A 100%);
-background-image: -webkit-linear-gradient(bottom, #1D68A1 39%, #1B364A 100%);
-background-image: -ms-linear-gradient(bottom, #1D68A1 39%, #1B364A 100%);
-background-image: linear-gradient(to bottom, #1D68A1 39%, #1B364A 100%);
- }
+    );
+  background-image: -o-linear-gradient(bottom, #1D68A1 39%, #1B364A 100%);
+  background-image: -moz-linear-gradient(bottom, #1D68A1 39%, #1B364A 100%);
+  background-image: -webkit-linear-gradient(bottom, #1D68A1 39%, #1B364A 100%);
+  background-image: -ms-linear-gradient(bottom, #1D68A1 39%, #1B364A 100%);
+  background-image: linear-gradient(to bottom, #1D68A1 39%, #1B364A 100%);
+}
 
- 
+
 
 /** SOLAPA PARA CAMBIAR DE CONTEXTO CONSULTORIA/CAPACITACION **/
 
@@ -245,8 +238,8 @@ background-image: linear-gradient(to bottom, #1D68A1 39%, #1B364A 100%);
 
 /** Caja para botones consultoria y capacitacion en la home  **/
 .caja-boton-home {
-width: 450px;
-margin-left: 100px ;
+  width: 450px;
+  margin-left: 100px ;
 
 }
 
@@ -260,107 +253,84 @@ margin-left: 100px ;
   filter: alpha(opacity=100); /* For IE8 and earlier */
 }
 
-
-/**Caja de título bajada anterior
-.caja-bajada   {
-width: 450px;
-margin-left: auto ;
-margin-right: auto ;
-top: 20px;
-}
-
-.caja-bajada h2 {
-text-align: center;
-font-size: 28px !important;
-}
-
-.caja-bajada p {
-text-align: center;
-margin-top: -25px;
-}
- **/
-
-
 .inicio-caja-bajada  {
-margin-left: auto ;
-margin-right: auto ;
-top: 20px;
-text-align: center;
-
+  margin-left: auto ;
+  margin-right: auto ;
+  top: 20px;
+  text-align: center;
 }
-
 
 .inicio-caja-bajada  .titulo-principal {
-font-size: 1.6em;
+  font-size: 1.6em;
 }
 
 .inicio-caja-bajada  .titulo-principal-bold {
-font-weight: bold;
+  font-weight: bold;
 }
 
 .inicio-caja-bajada p {
-text-align: center;
-margin-top: -40px;
-padding-top: 30px;
-padding-bottom: 40px;
+  text-align: center;
+  margin-top: -40px;
+  padding-top: 30px;
+  padding-bottom: 40px;
 }
 
 
 /**SLIDESHOW PARA INICIO Y CONSULTORIA**/
 
 .pane-slideshow-para-la-p-gina-de-inicio {
-position:relative;
-top: -30px;
-z-index: 100;
+  position:relative;
+  top: -30px;
+  z-index: 100;
 }
 
 .pane-slideshow-para-la-p-gina-de-inicio .more-link a {
-font-size:0px;
-content:" ";
-color:transparent;
-background-image: url("../images/info_consultoria.png");
-display:block;
-width: 79px;
-height: 38px;
-opacity:0.8;
-position:absolute;
-bottom:80px;
-left:300px;
-z-index:200;
+  font-size:0px;
+  content:" ";
+  color:transparent;
+  background-image: url("../images/info_consultoria.png");
+  display:block;
+  width: 79px;
+  height: 38px;
+  opacity:0.8;
+  position:absolute;
+  bottom:80px;
+  left:300px;
+  z-index:200;
 }
 
 .pane-slideshow-para-la-p-gina-de-inicio .more-link a:hover{
-opacity:1;
+  opacity:1;
 }
 
 .views-slideshow-pager-field-item {
-float: left;
+  float: left;
 }
 
 .slideshow-consultoria  .views-content-counter {
-font-size:0px;
-content:" ";
-color:transparent;
-padding: 5px 5px;
-width: 20px;
-height: 20px;
-background: url("../images/2.png") top left no-repeat;
+  font-size:0px;
+  content:" ";
+  color:transparent;
+  padding: 5px 5px;
+  width: 20px;
+  height: 20px;
+  background: url("../images/2.png") top left no-repeat;
 }
 
 .slideshow-consultoria .active .views-content-counter {
-background: url("../images/1_con.png") top left no-repeat;
+  background: url("../images/1_con.png") top left no-repeat;
 }
 
 .views-slideshow-controls-bottom {
-left: 100px;
-bottom:80px;
-position: relative;
-z-index:200;
+  left: 100px;
+  bottom:80px;
+  position: relative;
+  z-index:200;
 }
 
- .views-slideshow-inicio {
-float: left;
- }
+.views-slideshow-inicio {
+  float: left;
+}
 
 
 /** SECCION CONSULTORIA **/
@@ -368,10 +338,10 @@ float: left;
 /** Caja con imagen bajada (abajo del slider) **/
 
 .caja-consultoria {
-width:900px;
-margin-left: 80px ;
-margin-right: auto ;
-margin-top: -20px;
+  width:900px;
+  margin-left: 80px ;
+  margin-right: auto ;
+  margin-top: -20px;
 }
 
 
@@ -381,7 +351,7 @@ margin-top: -20px;
 
 
 .caja-consultoria h2 {
-display: none;
+  display: none;
 }
 
 .caja-consultoria .field-name-field-imagen-bajada img{
@@ -389,148 +359,145 @@ display: none;
 }
 
 .caja-consultoria .field-name-body {
-    text-align: justify;
-    margin-left:190px;
-    margin-top:15px;
+  text-align: justify;
+  margin-left:190px;
+  margin-top:15px;
 }
 
 .caja-consultoria .field-name-body .bajada-consultoria-bold {
   font-weight: bold;
   color: #4d8a43; 
 }
- 
+
 
 /** Controles para Sliders de Valores  **/
 
 .pane-vista-slideshow-programas {
-position: absolute;
+  position: absolute;
 }
 
- 
+
 .pane-vista-slideshow-valores   .views-slideshow-controls-text-previous {
-    background-image: url("../images/left-01.png");
-    color: transparent;
-    content: " ";
-    display: block;
-    font-size: 0;
-    height: 35px;
-    left: -120px;
-    opacity: 1;
-    position: absolute;
-    top: -20px;
-    width: 22px;
+  background-image: url("../images/left-01.png");
+  color: transparent;
+  content: " ";
+  display: block;
+  font-size: 0;
+  height: 35px;
+  left: -120px;
+  opacity: 1;
+  position: absolute;
+  top: -20px;
+  width: 22px;
 }
 
 .pane-vista-slideshow-valores  .views-slideshow-controls-text-next {
-    background-image: url("../images/right-01.png");
-    color: transparent;
-    content: " ";
-    display: block;
-    font-size: 0;
-    height: 35px;
-    left: 180px;
-    opacity: 1;
-    position: absolute;
-    top: -20px;
-    width: 22px;
+  background-image: url("../images/right-01.png");
+  color: transparent;
+  content: " ";
+  display: block;
+  font-size: 0;
+  height: 35px;
+  left: 180px;
+  opacity: 1;
+  position: absolute;
+  top: -20px;
+  width: 22px;
 }
 
 
 .pane-vista-slideshow-programas   .views-slideshow-controls-text-previous {
-    background-image: url("../images/left-01.png");
-    color: transparent;
-    content: " ";
-    display: block;
-    font-size: 0;
-    height: 35px;
-    left: -110px;
-    opacity: 1;
-    top: 0px;
-    position: absolute;
-    width: 22px;
+  background-image: url("../images/left-01.png");
+  color: transparent;
+  content: " ";
+  display: block;
+  font-size: 0;
+  height: 35px;
+  left: -110px;
+  opacity: 1;
+  top: 0px;
+  position: absolute;
+  width: 22px;
 }
 
 .pane-vista-slideshow-programas  .views-slideshow-controls-text-next {
-    background-image: url("../images/right-01.png");
-    color: transparent;
-    content: " ";
-    display: block;
-    font-size: 0;
-    height: 35px;
-    left: 200px;
-    opacity: 1;
-    position: absolute;
-    top: 0px;
-    width: 22px;
+  background-image: url("../images/right-01.png");
+  color: transparent;
+  content: " ";
+  display: block;
+  font-size: 0;
+  height: 35px;
+  left: 200px;
+  opacity: 1;
+  position: absolute;
+  top: 0px;
+  width: 22px;
 }
-
 
 /** Controles para Sliders de Valores y Programas ejecutivos **/
 
 .views_slideshow_controls_text_pause,
 .views_slideshow_controls_text_play {
-display: none;
+  display: none;
 }
-
 
 .pane-vista-slideshow-programas .views-slideshow-controls-text .views-slideshow-controls-text-previous {
-font-size:0px;
-content:" ";
-color:transparent;
-background-image: url("../images/left-01.png");
-display:block;
-width: 22px;
-height: 35px;
-opacity:1;
-position:absolute;
-bottom:50px;
-left:-110px;
+  font-size:0px;
+  content:" ";
+  color:transparent;
+  background-image: url("../images/left-01.png");
+  display:block;
+  width: 22px;
+  height: 35px;
+  opacity:1;
+  position:absolute;
+  bottom:50px;
+  left:-110px;
 }
- 
+
 .pane-vista-slideshow-programas .views-slideshow-controls-text .views-slideshow-controls-text-next {
-font-size:0px;
-content:" ";
-color:transparent;
-background-image: url("../images/right-01.png");
-display:block;
-width: 22px;
-height: 35px;
-opacity:1;
-position:absolute;
-bottom:50px;
-left:235px;
+  font-size:0px;
+  content:" ";
+  color:transparent;
+  background-image: url("../images/right-01.png");
+  display:block;
+  width: 22px;
+  height: 35px;
+  opacity:1;
+  position:absolute;
+  bottom:50px;
+  left:235px;
 }
- 
+
 .pane-vista-slideshow-valores h2 {
-color: #4d8a43;
+  color: #4d8a43;
 }
 
 .pane-vista-slideshow-programas h2 {
-color: #1d639a;
+  color: #1d639a;
 }
 
 .pane-vista-slideshow-valores {
-height: 200px;
-margin-left: 80px;
+  height: 200px;
+  margin-left: 80px;
 }
 
 
 /**Caja de Envio CV **/
 
- 
 .envio-cv {
-width: 80px;
-height: 500px;
-padding: 10px 10px 20px 10px;
+  width: 80px;
+  height: 500px;
+  padding: 10px 10px 20px 10px;
 }  
 
 .caja-envio-cv {
-background-image: url("../images/base_envia_cv_2.png");
-background-position: 0px 30px;
-background-repeat: no-repeat;
-height: 335px;
-margin-left: -30px;
-padding: 40px 0 0 40px; 
+  background-image: url("../images/base_envia_cv_2.png");
+  background-position: 0px 30px;
+  background-repeat: no-repeat;
+  height: 335px;
+  margin-left: -30px;
+  padding: 40px 0 0 40px; 
 }
 
 .caja-envio-cv .form-item label {
@@ -539,9 +506,9 @@ padding: 40px 0 0 40px;
 }
 
 .caja-envio-cv h2 {
-color: #fff;
-margin-left: 35px;
-margin-top: 0;
+  color: #fff;
+  margin-left: 35px;
+  margin-top: 0;
 }
 
 
@@ -556,60 +523,58 @@ margin-top: 0;
 }
 
 .caja-envio-cv #edit-submitted-adjuntar-el-cv-upload-button  {
-border: 0;
-font-size:0pt;
-background: none;
-background: transparent url("../images/btn_envio_cv.png") no-repeat center top;
-overflow: hidden;
-height: 60px;
-width: 50px;
+  border: 0;
+  font-size:0pt;
+  background: none;
+  background: transparent url("../images/btn_envio_cv.png") no-repeat center top;
+  overflow: hidden;
+  height: 60px;
+  width: 50px;
 }
 
 .caja-envio-cv #edit-submitted-adjuntar-el-cv-remove-button {
-border: 0;
-font-size:0pt;
-background: none;
-background: transparent url("../images/btn_borrar.png") no-repeat center top;
-overflow: hidden;
-height: 50px;
-width: 100px;  
+  border: 0;
+  font-size:0pt;
+  background: none;
+  background: transparent url("../images/btn_borrar.png") no-repeat center top;
+  overflow: hidden;
+  height: 50px;
+  width: 100px;  
 }
 
 .caja-envio-cv .cv-adjunto .form-file  {
-padding: 10px 15px 11px !important;
-font-size: 14px !important;
-border-radius: 5px;
--moz-border-radius: 5px;
--webkit-border-radius: 5px;
-cursor: pointer;
-box-shadow: 0 1px 0 rgba(255, 255, 255, 0.5) inset;
--moz-box-shadow: 0 1px 0 rgba(255, 255, 255, 0.5) inset;
--webkit-box-shadow: 0 1px 0 rgba(255, 255, 255, 0.5) inset;
-width: 260px;
+  padding: 10px 15px 11px !important;
+  font-size: 14px !important;
+  border-radius: 5px;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  cursor: pointer;
+  box-shadow: 0 1px 0 rgba(255, 255, 255, 0.5) inset;
+  -moz-box-shadow: 0 1px 0 rgba(255, 255, 255, 0.5) inset;
+  -webkit-box-shadow: 0 1px 0 rgba(255, 255, 255, 0.5) inset;
+  width: 260px;
 }
 
 .caja-envio-cv .webform-submit    {
-margin-left: 240px;
-margin-top: -30px;
-border: 0;
-font-size:0pt;
-float: left;
-background: none;
-background:  url("../images/btn_enviar.png") no-repeat;
-overflow: hidden;
-height: 45px;
-width: 99px;
+  margin-left: 240px;
+  margin-top: -30px;
+  border: 0;
+  font-size:0pt;
+  float: left;
+  background: none;
+  background:  url("../images/btn_enviar.png") no-repeat;
+  overflow: hidden;
+  height: 45px;
+  width: 99px;
 }
 
-
 .caja-envio-cv .webform-submit:hover    {
-background: transparent url("../images/btn_enviar_hover.png") no-repeat;
+  background: transparent url("../images/btn_enviar_hover.png") no-repeat;
 }
 
 .form-text {
-width: 320px
+  width: 320px
 }
-
 
 #webform-client-form-48 {
   padding-left: 26px;
@@ -624,68 +589,66 @@ width: 320px
 }
 
 .view-mision-valores {
-width: 800px;
-margin-left: auto ;
-margin-right: auto ;
+  width: 800px;
+  margin-left: auto ;
+  margin-right: auto ;
 }
 
 .view-mision-valores .titulo-vision-valores {
-color: #4d8a43;
-font-family: 'Open Sans Condensed', sans-serif;
-margin-left: 80px;
-margin-top: -70px;
+  color: #4d8a43;
+  font-family: 'Open Sans Condensed', sans-serif;
+  margin-left: 80px;
+  margin-top: -70px;
 }
 
 .view-mision-valores .bajada-vision-valores {
-color: #cbcbcc;
-font-family: 'Open Sans Condensed', sans-serif;
-font-size: 20px;
-margin-left: 80px;
-margin-top: -12px;
+  color: #cbcbcc;
+  font-family: 'Open Sans Condensed', sans-serif;
+  font-size: 20px;
+  margin-left: 80px;
+  margin-top: -12px;
 }
 
 .view-mision-valores p {
-margin-left: 120px;
-text-align: left;
-color: black;
-width: 720px;
-font-size: 12px;
+  margin-left: 120px;
+  text-align: left;
+  color: black;
+  width: 720px;
+  font-size: 12px;
 }
 
 /** PANEL BUSQUEDAS EN LA HOME DE CONSULTORIA **/
 .panel-busquedas {
-background-image: url("../images/base_programas.png");
-background-position: 0px 40px;
-background-repeat: no-repeat;
-padding: 30px 80px 0px 70px;
-text-align: justify;
-height: 270px;
-margin-left: 45px;
-margin-top: 110px;
+  background-image: url("../images/base_programas.png");
+  background-position: 0px 40px;
+  background-repeat: no-repeat;
+  padding: 30px 80px 0px 70px;
+  text-align: justify;
+  height: 270px;
+  margin-left: 45px;
+  margin-top: 110px;
 }
 
-
 .panel-busquedas h2 {
-text-transform: capitalize;
-margin-left: 0px;
-color: #4d8a43;
-margin-top:20px;
+  text-transform: capitalize;
+  margin-left: 0px;
+  color: #4d8a43;
+  margin-top:20px;
 }
 
 .panel-busquedas a {
-text-transform: none;
-color: inherit;
+  text-transform: none;
+  color: inherit;
 }
 
 .panel-busquedas .views-field-body {
-text-align: justify;
+  text-align: justify;
 }
 
 .panel-busquedas .ver-mas-link {
-margin-top: -5px;
-color: #4d8a43;
+  margin-top: -5px;
+  color: #4d8a43;
 }
-
 
 .panel-busquedas  .views-slideshow-controls-text-next {
   background-image: url("../images/right-01.png");
@@ -715,8 +678,6 @@ color: #4d8a43;
   top: -40px;
 }
 
-
-
 .panel-busquedas .views-label-field-zona {
   font-weight:bold
 }
@@ -727,7 +688,7 @@ color: #4d8a43;
 
 .panel-busquedas .more-link a {
   color: #4d8a43;
-  }
+}
 
 /** PANEL CAPACITACION CORPORATIVA **/
 
@@ -743,8 +704,8 @@ text-align: justify;
 }
 
 .panel-capacitacion-corporativa h2 {
-color: #4d8a43;
-margin-top: 15px;
+  color: #4d8a43;
+  margin-top: 15px;
 }
 
 .panel-capacitacion-corporativa .btn-info a {
@@ -763,7 +724,7 @@ margin-top: 15px;
 .panel-capacitacion-corporativa .btn-info:hover a {
   background-image: url("../images/info_consultoria_over.png");
 }
- 
+
 /** FIN HOME CONSULTORIA **/ 
 
 /** BUSQUEDAS LABORALES **/
@@ -800,13 +761,13 @@ margin-top: 15px;
 .pane-vista-busquedas .views-label-field-empresa,
 .pane-vista-busquedas .views-label-field-zona  {
   color: #4d8a43;
- }
+}
 
 .pane-vista-busquedas .views-field-body {
   width: 780px
 }
 
- 
+
 .pane-vista-busquedas .pager a:hover {
   font-weight: bold;
   color: #4d8a43;
@@ -814,43 +775,42 @@ margin-top: 15px;
 
 .pane-vista-busquedas .pager .pager-first,
 .pane-vista-busquedas .pager .pager-last {
-display:none;
+  display:none;
 }
 
 .pane-vista-busquedas .pager {
-    color: #4d8a43;
+  color: #4d8a43;
 }
 
 .pane-vista-busquedas .pager .pager-previous a {
-    background-image: url("../images/left_consultoria.png");
-    color: transparent;
-    content: " ";
-    display: block;
-    background-repeat: no-repeat;
-    font-size: 0;
-    opacity: 1;
-    position: absolute;
-    width: 13px;
-    height: 13px;
-    margin-left: 350px;
-    margin-top: -15px;
+  background-image: url("../images/left_consultoria.png");
+  color: transparent;
+  content: " ";
+  display: block;
+  background-repeat: no-repeat;
+  font-size: 0;
+  opacity: 1;
+  position: absolute;
+  width: 13px;
+  height: 13px;
+  margin-left: 350px;
+  margin-top: -15px;
 }
 
 .pane-vista-busquedas .pager .pager-next a {
-    background-image: url("../images/right_consultoria.png");
-    color: transparent;
-    content: " ";
-    display: block;
-    background-repeat: no-repeat;
-    font-size: 0;
-    opacity: 1;
-    position: absolute;
-    width: 13px;
-    height: 13px;
-    margin-left: 500px;
-    margin-top: -15px;
+  background-image: url("../images/right_consultoria.png");
+  color: transparent;
+  content: " ";
+  display: block;
+  background-repeat: no-repeat;
+  font-size: 0;
+  opacity: 1;
+  position: absolute;
+  width: 13px;
+  height: 13px;
+  margin-left: 500px;
+  margin-top: -15px;
 }
-
 
 .views-field .ver-mas {
   margin-left: 40px;
@@ -886,7 +846,7 @@ display:none;
   top: -100px;
   left: -500px;
 
- }
+}
 
 .popup-element-body a.popup-close-button {
   background-image: url("../images/close.png");
@@ -897,18 +857,15 @@ display:none;
   width: 34px;
 }
 
-
 /** PONE TODO EL FONDO EN TRANSPARENTE CUANDO ABRE EL POPUP **/
 .panel-display   {
  /** opacity: 0.7; **/
- }
+}
 
- 
 
 /** PANEL SLIDESHOW DESTACADOS en BUSQUEDAS LABORALES **/
 
-
- .panel-destacados {
+.panel-destacados {
   background-image: url("../images/base_destacados.png");
   background-position: 40px 0px;
   background-repeat: no-repeat;
@@ -932,33 +889,33 @@ display:none;
   color: #4d8a43;
 }
 
- 
+
 .panel-destacados   .views-slideshow-controls-text-previous {
-    background-image: url("../images/left-01.png");
-    color: transparent;
-    content: " ";
-    display: block;
-    font-size: 0;
-    height: 35px;
-    left: -140px;
-    opacity: 1;
-    position: absolute;
-    top: -40px;
-    width: 22px;
+  background-image: url("../images/left-01.png");
+  color: transparent;
+  content: " ";
+  display: block;
+  font-size: 0;
+  height: 35px;
+  left: -140px;
+  opacity: 1;
+  position: absolute;
+  top: -40px;
+  width: 22px;
 }
 
 .panel-destacados  .views-slideshow-controls-text-next {
-    background-image: url("../images/right-01.png");
-    color: transparent;
-    content: " ";
-    display: block;
-    font-size: 0;
-    height: 35px;
-    left: 210px;
-    opacity: 1;
-    position: absolute;
-    top: -40px;
-    width: 22px;
+  background-image: url("../images/right-01.png");
+  color: transparent;
+  content: " ";
+  display: block;
+  font-size: 0;
+  height: 35px;
+  left: 210px;
+  opacity: 1;
+  position: absolute;
+  top: -40px;
+  width: 22px;
 }
 
 .panel-destacados .ver-mas-link a {
@@ -980,25 +937,25 @@ display:none;
 .capacitacion-corporativa-bajada  .pane-title{
  color: #4d8a43;
 }
- 
+
 .bajada-seleccion-personal .pane-title {
-   background: url("../images/seleccion_bg.png") no-repeat scroll left center rgba(0, 0, 0, 0);
-   color: rgb(255, 255, 255);
-   height: 75px;
-   padding-top: 5px;
-   margin-left: -90px;
-   padding-left: 80px;
+ background: url("../images/seleccion_bg.png") no-repeat scroll left center rgba(0, 0, 0, 0);
+ color: rgb(255, 255, 255);
+ height: 75px;
+ padding-top: 5px;
+ margin-left: -90px;
+ padding-left: 80px;
 }
 
 .bajada-seleccion-personal .node-imagen-con-bajada img {
  margin-left: 670px;
- }
+}
 
 .bajada-seleccion-personal .node-imagen-con-bajada .field-name-body {
-    margin-left: 240px;
-    margin-top: -150px;
-    text-align: center;
-    width: 430px;
+  margin-left: 240px;
+  margin-top: -150px;
+  text-align: center;
+  width: 430px;
 }
 
 .principal-seleccion-personal {
@@ -1006,29 +963,29 @@ display:none;
 }
 
 .principal-seleccion-personal .node-imagen-con-bajada .field-name-body {
-   margin-left: 470px;
-   text-align: justify;
-   width: 400px;
+ margin-left: 470px;
+ text-align: justify;
+ width: 400px;
 }
 
- .principal-seleccion-personal .field-item img {
+.principal-seleccion-personal .field-item img {
   float: left;
-    margin-left: 30px;
+  margin-left: 30px;
 
- }
+}
 
 
 /** CAPACITACION CORPORATIVA**/
 
 .capacitacion-corporativa-bajada img {
  margin-top: -60px;
-width: 20%;
-height: 20%;
-margin-left: 40px;
+ width: 20%;
+ height: 20%;
+ margin-left: 40px;
 }
 
 .capacitacion-corporativa-bajada  .pane-title{
-margin-left: 140px;
+  margin-left: 140px;
 }
 
 .capacitacion-corporativa-bajada .field-name-body {
@@ -1038,7 +995,7 @@ margin-left: 140px;
   margin-bottom: -20px;
   width: 430px;
 }
- 
+
 .izquierda-capacitacion-corporativa .pane-content  {
   margin-left: 80px;
   text-align: justify;
@@ -1046,27 +1003,27 @@ margin-left: 140px;
 }
 
 .derecha-capacitacion-corporativa .pane-content  {
-   margin-left: 20px;
-   text-align: justify;
-   width: 400px;
- }
+ margin-left: 20px;
+ text-align: justify;
+ width: 400px;
+}
 
 .imagen-capacitacion-corporativa img {
-     margin-left: 20px;
+ margin-left: 20px;
 }
 
 /**CONTACTO CONSULTORIA **/
 
 .panel-ubicacion-consultoria {
-   margin-top: -40px;
+ margin-top: -40px;
 
 }
 
- .panel-ubicacion-consultoria .pane-title {
+.panel-ubicacion-consultoria .pane-title {
   color: #4d8a43;
   font-size: 1.6em;
   margin-left: -20px;
- }
+}
 
 
 .panel-ubicacion-consultoria .node-imagen-con-bajada .field-name-body {
@@ -1083,7 +1040,7 @@ margin-left: 140px;
 }
 
 .panel-ubicacion-consultoria .node-imagen-con-bajada img {
-margin-left: 220px;
+  margin-left: 220px;
 }
 
 .panel-ubicacion-consultoria a {
@@ -1102,8 +1059,8 @@ margin-left: 220px;
 }
 
 .contacto-consultoria .pane-title {
-color: #4d8a43;
- font-size: 1.6em;
+  color: #4d8a43;
+  font-size: 1.6em;
 }
 
 .contacto-consultoria .form-textarea-wrapper {
@@ -1112,14 +1069,14 @@ color: #4d8a43;
 }
 
 .contacto-consultoria .form-submit {
-    background: url("../images/btn_enviar.png") no-repeat scroll center top transparent;
-    border: 0 none;
-    float: left;
-    font-size: 0;
-    height: 45px;
-    margin-left: 110px;
-    overflow: hidden;
-    width: 99px;
+  background: url("../images/btn_enviar.png") no-repeat scroll center top transparent;
+  border: 0 none;
+  float: left;
+  font-size: 0;
+  height: 45px;
+  margin-left: 110px;
+  overflow: hidden;
+  width: 99px;
 }
 
 .contacto-consultoria .form-submit:hover {
@@ -1131,53 +1088,53 @@ color: #4d8a43;
 /**SLIDESHOW PARA CAPACITACION**/
 
 .slideshow-capacitacion {
-position:relative;
-top: -15px;
-z-index: 100;
+  position:relative;
+  top: -15px;
+  z-index: 100;
 }
 
 .slideshow-capacitacion .views-content-counter {
-font-size:0px;
-content:" ";
-color:transparent;
-padding: 5px 5px;
-width: 20px;
-height: 20px;
-background: url("../images/2.png") top left no-repeat;
+  font-size:0px;
+  content:" ";
+  color:transparent;
+  padding: 5px 5px;
+  width: 20px;
+  height: 20px;
+  background: url("../images/2.png") top left no-repeat;
 }
 
 .slideshow-capacitacion .active .views-content-counter {
-background: url("../images/1_cap.png") top left no-repeat;
+  background: url("../images/1_cap.png") top left no-repeat;
 }
 
 .slideshow-capacitacion .more-link a {
-background-image: url("../images/info_capacitacion.png");
-font-size:0px;
-content:" ";
-color:transparent;
-display:block;
-width: 79px;
-height: 38px;
-opacity:0.8;
-position:absolute;
-bottom:95px;
-left:300px;
-z-index:200;
+  background-image: url("../images/info_capacitacion.png");
+  font-size:0px;
+  content:" ";
+  color:transparent;
+  display:block;
+  width: 79px;
+  height: 38px;
+  opacity:0.8;
+  position:absolute;
+  bottom:95px;
+  left:300px;
+  z-index:200;
 }
 
 /** Caja con imagen bajada (abajo del slider) **/
 
 .caja-capacitacion {
-width: 800px;
-margin-left: auto ;
-margin-right: auto ;
-margin-top: -20px;
+  width: 800px;
+  margin-left: auto ;
+  margin-right: auto ;
+  margin-top: -20px;
 }
 
 .caja-capacitacion h2 {
-color: #114f79;
-font-weight: 700;
-margin-left: 188px;
+  color: #114f79;
+  font-weight: 700;
+  margin-left: 188px;
 }
 
 .caja-capacitacion .field-name-field-imagen-bajada img{
@@ -1185,66 +1142,66 @@ margin-left: 188px;
 }
 
 .caja-capacitacion .field-name-body {
-    text-align: justify;
-    margin-left:190px;
-    margin-top: 0px;
-    width: 580px;
+  text-align: justify;
+  margin-left:190px;
+  margin-top: 0px;
+  width: 580px;
 }
 
 .caja-capacitacion .bajada-capacitacion-bold {
   font-weight: bold;
- }
+}
 
 .caja-capacitacion .bajada-capacitacion-color {
   color: #114f79;
- }
+}
 
 .pane-vista-slideshow-capacitacion h2 {
-text-transform: capitalize;
-margin-left: 50px;
-color: #1d639a;
+  text-transform: capitalize;
+  margin-left: 50px;
+  color: #1d639a;
 }
 
 .pane-vista-slideshow-programas {
-height: 200px;
-margin-left: 60px;
-margin-top: 0px;
+  height: 200px;
+  margin-left: 60px;
+  margin-top: 0px;
 }
 
 .pane-vista-slideshow-capacitacion  {
-padding-left: 60px;
-margin-top: 0px;
+  padding-left: 60px;
+  margin-top: 0px;
 }
 
 /** BLOQUE NOVEDADES DE LA HOME DE CAPACITACION **/
 
 .pane-bloque-novedades h2 {
-margin-left: 40px;
-color: #1d639a;
+  margin-left: 40px;
+  color: #1d639a;
 }
 
 .pane-bloque-novedades {
-width: 400px;
-height: 300px;  
-margin-left: 40px;
+  width: 400px;
+  height: 300px;  
+  margin-left: 40px;
 }
 
 .pane-bloque-novedades .link-novedades a {
-font-size:0px;
-text-align: right;
-content:" ";
-color:transparent;
-background-image: url("../images/info_capacitacion.png");
-display:block;
-width: 76px;
-height: 38px;
-margin-left: 200px;
-margin-top: 100px;
-opacity:1;
+  font-size:0px;
+  text-align: right;
+  content:" ";
+  color:transparent;
+  background-image: url("../images/info_capacitacion.png");
+  display:block;
+  width: 76px;
+  height: 38px;
+  margin-left: 200px;
+  margin-top: 100px;
+  opacity:1;
 }
- 
+
 .pane-bloque-novedades .link-novedades:hover  a{
-background-image: url("../images/info_capacitacion_over.png");
+  background-image: url("../images/info_capacitacion_over.png");
 }
 
 .pane-bloque-novedades .views-slideshow-cycle-main-frame-row-item {
@@ -1255,38 +1212,38 @@ background-image: url("../images/info_capacitacion_over.png");
 
 
 .pane-bloque-novedades .views_slideshow_controls_text_previous {
-    background-image: url("../images/left-01.png");
-    color: transparent;
-    background-repeat: no-repeat;
-    content: " ";
-    display: block;
-    font-size: 0;
-    height: 35px;
-    left: -125px;
-    opacity: 1;
-    position: absolute;
-    width: 22px;
+  background-image: url("../images/left-01.png");
+  color: transparent;
+  background-repeat: no-repeat;
+  content: " ";
+  display: block;
+  font-size: 0;
+  height: 35px;
+  left: -125px;
+  opacity: 1;
+  position: absolute;
+  width: 22px;
 }
 
 .pane-bloque-novedades .views_slideshow_controls_text_next {
-    background-image: url("../images/right-01.png");
-    color: transparent;
-    background-repeat: no-repeat;
-    content: " ";
-    display: block;
-    font-size: 0;
-    height: 35px;
-    left: 210px;
-    opacity: 1;
-    position: absolute;
-    width: 22px;
+  background-image: url("../images/right-01.png");
+  color: transparent;
+  background-repeat: no-repeat;
+  content: " ";
+  display: block;
+  font-size: 0;
+  height: 35px;
+  left: 210px;
+  opacity: 1;
+  position: absolute;
+  width: 22px;
 }
 
 
 .panel-programas-ejecutivos {
-background-image: url("../images/base_programas.png");
-background-repeat: no-repeat;
-background-position: 0 -5px;
+  background-image: url("../images/base_programas.png");
+  background-repeat: no-repeat;
+  background-position: 0 -5px;
 }
 
 .panel-programas-ejecutivos h2 {
@@ -1295,10 +1252,10 @@ background-position: 0 -5px;
 }
 
 .panel-programas-ejecutivos .field-content {
-text-align: justify;
-width: 350px;
-margin-left: 40px;
-margin-bottom: 30px;
+  text-align: justify;
+  width: 350px;
+  margin-left: 40px;
+  margin-bottom: 30px;
 }
 
 
@@ -1339,9 +1296,7 @@ margin-bottom: 30px;
   background-image: url("../images/info_capacitacion_over.png");
 }
 
-
 /** DIPLOMATURAS **/
-
 
 .diplomaturas-bajada,
 .cursos-tecnicos-bajada,
@@ -1350,26 +1305,25 @@ margin-bottom: 30px;
  margin-left: 80px;
  margin-top: -60px;
 }
- 
-.diplomaturas-bajada .pane-title {
-   background: url("../images/diplomatura_bg.png") no-repeat scroll left center rgba(0, 0, 0, 0);
-   color: rgb(255, 255, 255);
-   height: 75px;
-   margin-left: -90px;
-   padding-left: 80px;
 
+.diplomaturas-bajada .pane-title {
+ background: url("../images/diplomatura_bg.png") no-repeat scroll left center rgba(0, 0, 0, 0);
+ color: rgb(255, 255, 255);
+ height: 75px;
+ margin-left: -90px;
+ padding-left: 80px;
 }
- 
+
 .diplomaturas-bajada img {
-margin-left: 700px;
-margin-top: -40px;
+  margin-left: 700px;
+  margin-top: -40px;
 }
 
 
 .principal-diplomaturas .field-name-body {
-    margin-left: 80px;
-    text-align: justify;
-    width: 400px;
+  margin-left: 80px;
+  text-align: justify;
+  width: 400px;
 }
 
 .principal-diplomaturas {
@@ -1377,11 +1331,11 @@ margin-top: -40px;
 }
 
 .convenios-diplomaturas {
-margin-top: -20px;
+  margin-top: -20px;
 }
 
 .convenios-diplomaturas img {
-margin-top: -20px;
+  margin-top: -20px;
 }
 
 .convenios-diplomaturas .pane-title,
@@ -1409,9 +1363,9 @@ margin-top: -20px;
 
 
 .principal-cursos-tecnicos .field-name-body {
-    margin-left: 80px;
-    text-align: justify;
-    width: 400px;
+  margin-left: 80px;
+  text-align: justify;
+  width: 400px;
 }
 
 .cursos-tecnicos-convenios {
@@ -1419,9 +1373,8 @@ margin-top: -20px;
 }
 
 .view-consulta-cursos-tecnicos {
-margin-top: 20px;
-margin-left: 80px;
-
+  margin-top: 20px;
+  margin-left: 80px;
 }
 
 /** PROGRAMAS EJECUTIVOS **/
@@ -1437,13 +1390,12 @@ margin-left: 80px;
 }
 
 
- 
 /** NOVEDADES CAPACITACION **/
 
 .imagen-header-novedades {
-position: relative;
-top: -30px;
-z-index: 100;
+  position: relative;
+  top: -30px;
+  z-index: 100;
 }
 
 .view-novedades-capacitacion  {
@@ -1451,14 +1403,14 @@ z-index: 100;
 }
 
 .view-novedades-capacitacion  h2 {
-color: #114f79;
+  color: #114f79;
 
 }
 
 .view-novedades-capacitacion  .post-date {
-margin-left: 315px;
-margin-top:-40px;
-margin-bottom:20px;
+  margin-left: 315px;
+  margin-top:-40px;
+  margin-bottom:20px;
 }
 
 .pane-novedades-diplomaturas .pane-title,
@@ -1475,7 +1427,7 @@ margin-bottom:20px;
   width: 560px;
 }
 
- .view-novedades-capacitacion .novedades-capacitacion-title {
+.view-novedades-capacitacion .novedades-capacitacion-title {
  font-size: 1.2em;
  margin-left: 20px;
  color: #114f79;
@@ -1485,20 +1437,20 @@ margin-bottom:20px;
  margin-left: 45px; 
  height: 400x;
 }
- 
 
- .view-novedades-capacitacion .novedades-capacitacion-body {
+
+.view-novedades-capacitacion .novedades-capacitacion-body {
   height: 165px;
   padding: 10px 10px 10px 10px;
- }
+}
 
- .view-novedades-capacitacion img {
+.view-novedades-capacitacion img {
   background: transparent;
   margin-top: 20px;
   margin-left: 20px;
   float: left;
   padding: 0 15px 0 0;
- }
+}
 
 .view-novedades-capacitacion .views-slideshow-controls-bottom {
   position: initial;
@@ -1507,33 +1459,33 @@ margin-bottom:20px;
 
 .view-novedades-capacitacion .ver-mas {
   margin-top:-65px;
- }
+}
 
 .view-novedades-capacitacion .ver-mas a {
-margin-left: 385px;
-background: transparent url("../images/ver+.png") no-repeat 0 -45px;
-font-size:0px;
-content:" ";
-color:transparent;
-display:block;
-position: relative;
-width: 78px;
-height: 45px;
+  margin-left: 385px;
+  background: transparent url("../images/ver+.png") no-repeat 0 -45px;
+  font-size:0px;
+  content:" ";
+  color:transparent;
+  display:block;
+  position: relative;
+  width: 78px;
+  height: 45px;
 }
 
 .view-novedades-capacitacion .ver-mas a:hover {
-background-position: 0px 0px;
+  background-position: 0px 0px;
 }
 
 .view-novedades-capacitacion .views_slideshow_cycle_main  {
-background-image: url("../images/top_caja_novedades1.png");
-background-repeat: no-repeat;
-background-position: center bottom;
-display: block;
-padding-left: 10px;
-width: 490px;
-z-index: 100;
-height: 220px;
+  background-image: url("../images/top_caja_novedades1.png");
+  background-repeat: no-repeat;
+  background-position: center bottom;
+  display: block;
+  padding-left: 10px;
+  width: 490px;
+  z-index: 100;
+  height: 220px;
 }
 
 .view-novedades-capacitacion .views-slideshow-controls-bottom {
@@ -1542,18 +1494,18 @@ height: 220px;
   margin-right: auto;
 }
 
- .view-novedades-capacitacion .views-slideshow-controls-bottom .views_slideshow_controls_text_previous {
-    background-image: url("../images/left.png");
-    color: transparent;
-    content: " ";
-    display: block;
-    background-repeat: no-repeat;
-    font-size: 0;
-    opacity: 1;
-    position: absolute;
-    width: 13px;
-    height: 13px;
-    margin-top: 5px;
+.view-novedades-capacitacion .views-slideshow-controls-bottom .views_slideshow_controls_text_previous {
+  background-image: url("../images/left.png");
+  color: transparent;
+  content: " ";
+  display: block;
+  background-repeat: no-repeat;
+  font-size: 0;
+  opacity: 1;
+  position: absolute;
+  width: 13px;
+  height: 13px;
+  margin-top: 5px;
 }
 
 .view-novedades-capacitacion .views-slideshow-controls-bottom .views_slideshow_controls_text_next {
@@ -1561,51 +1513,51 @@ height: 220px;
   color: transparent;
   content: " ";
   display: block;
-    background-repeat: no-repeat;
-    font-size: 0;
-    opacity: 1;
-    position: absolute;
-    width: 13px;
-    height: 13px;
-    margin-left: 80px;
-    margin-top: 5px;
+  background-repeat: no-repeat;
+  font-size: 0;
+  opacity: 1;
+  position: absolute;
+  width: 13px;
+  height: 13px;
+  margin-left: 80px;
+  margin-top: 5px;
 }
 
 .view-novedades-capacitacion .views-slideshow-controls-bottom .views-slideshow-pager-fields {
-margin-left: 35px;
-margin-bottom: 10px;
+  margin-left: 35px;
+  margin-bottom: 10px;
 }  
 
- 
+
 
 .view-novedades-capacitacion  .views-content-counter {
-opacity: 0.4;
+  opacity: 0.4;
 }
 
- 
+
 .view-novedades-capacitacion  .views-content-counter .active {
-opacity: 1;
+  opacity: 1;
 }
 
 
 
- /** DESTACADOS CAPACITACION **/
+/** DESTACADOS CAPACITACION **/
 
 .pane-novedades-destacados-capacitacion {
   width: 300px;
   margin-left: 150px;
 }
 
- .pane-novedades-destacados-capacitacion .pane-title {
+.pane-novedades-destacados-capacitacion .pane-title {
   padding-bottom: 10px;
- }
+}
 
 .pane-novedades-destacados-capacitacion .pane-title ,
 .pane-novedades-diplomaturas .pane-title ,
 .pane-novedades-cursos-tecnicos .pane-title ,
 .pane-novedades-programas-ejecutivos .pane-title {
   color: #114f79;
- }
+}
 
 .pane-novedades-destacados-capacitacion .novedades-capacitacion-title {
  font-size: 1.2em;
@@ -1622,8 +1574,8 @@ opacity: 1;
 /** CONTACTO CAPACITACION **/
 
 .contacto-capacitacion {
-margin-top: -40px;
-margin-left: 80px;
+  margin-top: -40px;
+  margin-left: 80px;
 }
 
 .contacto-capacitacion label {
@@ -1642,31 +1594,31 @@ margin-left: 80px;
 
 
 .contacto-capacitacion .form-submit {
-    background: url("../images/btn_enviar_cap.png") no-repeat scroll center top transparent;
-    border: 0 none;
-    float: left;
-    font-size: 0;
-    height: 45px;
-    margin-left: 115px;
-    overflow: hidden;
-    width: 99px;
-    opacity: 1;
-  }
+  background: url("../images/btn_enviar_cap.png") no-repeat scroll center top transparent;
+  border: 0 none;
+  float: left;
+  font-size: 0;
+  height: 45px;
+  margin-left: 115px;
+  overflow: hidden;
+  width: 99px;
+  opacity: 1;
+}
 
 .contacto-capacitacion .form-submit:hover {
-    background: url("../images/btn_enviar_cap.png") no-repeat scroll center top transparent;
-    opacity: 0.8;
+  background: url("../images/btn_enviar_cap.png") no-repeat scroll center top transparent;
+  opacity: 0.8;
 }
 
 
- .panel-ubicacion-capacitacion {
+.panel-ubicacion-capacitacion {
   margin-top: -40px;
- }
+}
 
- .panel-ubicacion-capacitacion .pane-title {
+.panel-ubicacion-capacitacion .pane-title {
   color: #114f79;
   font-size: 1.6em;
- }
+}
 
 
 .panel-ubicacion-capacitacion .node-imagen-con-bajada .field-name-body {
@@ -1683,7 +1635,7 @@ margin-left: 80px;
 }
 
 .panel-ubicacion-capacitacion .node-imagen-con-bajada img {
-margin-left: 250px;
+  margin-left: 250px;
 }
 
 .panel-ubicacion-capacitacion a {
@@ -1694,81 +1646,86 @@ margin-left: 250px;
 /** MAPA PARA SECCION CONTACTO (comun a los dos contextos) **/
 
 .node-mapa-de-ubicacion {
-position: relative;
-top: -40px;
-z-index: 100;
+  position: relative;
+  top: -40px;
+  z-index: 100;
 }
 
 
 /** FOOTER **/
 
 #footer-wrapper {
-    padding: 20px 5px 30px;
+  padding: 20px 5px 30px;
 }
 
 .region-footer-firstcolumn, .region-footer-secondcolumn, .region-footer-thirdcolumn, .region-footer-fourthcolumn {
-    margin-top: 0px;
-    float:none;   
-    display:inline-block;
-    width: 250px;
-  }
+  margin-top: 0px;
+  float:none;   
+  display:inline-block;
+  width: 250px;
+}
 
 #block-views-vista-footer-block {
-padding: 10px 10px;
+  padding: 10px 10px;
 }
 
 #footer-wrapper {
-    font-size: 1em;
+  font-size: 1em;
 }
 
 .contexto-consultoria #footer-wrapper a {
-    color: #fff;
-    text-decoration: none;
+  color: #fff;
+  text-decoration: none;
 }
 
 .contexto-capacitacion #footer-wrapper a {
-    color: #fff;
-    text-decoration: none;
+  color: #fff;
+  text-decoration: none;
 }
+
 #footer-wrapper a  {
-    color: #000;
-    text-decoration: none;
+  color: #000;
+  text-decoration: none;
+}
+#footer-wrapper a:hover  {
+  color: #000;
+  text-decoration: none;
 }
 
 #footer-wrapper .block {
-    border: none;
+  border: none;
 }
 
 .contexto-inicio #footer-wrapper {
-background: #e1e2e3 url("../images/footer_home2.png") top center no-repeat  ;
-    color: rgb(0, 0, 0);
+  background: #e1e2e3 url("../images/footer_home2.png") top center no-repeat  ;
+  color: rgb(0, 0, 0);
 }
- 
+
 .contexto-capacitacion #footer-wrapper {
-background: #114f79 url("../images/footer_capacitacion.jpg") top center no-repeat;
-    color: #fff;
+  background: #114f79 url("../images/footer_capacitacion.jpg") top center no-repeat;
+  color: #fff;
 }
 
 .contexto-consultoria #footer-wrapper {
-background: #4a8948 url("../images/footer_consultoria.jpg") top center no-repeat;
-    color: #fff;
+  background: #4a8948 url("../images/footer_consultoria.jpg") top center no-repeat;
+  color: #fff;
 }
 
 .contexto-capacitacion #page-wrapper {
-background: #114f79;
+  background: #114f79;
 }
 
 .contexto-consultoria #page-wrapper {
-background: #4a8948;
+  background: #4a8948;
 }
 
 .region-footer-firstcolumn {
-font-size: 11px;
+  font-size: 11px;
 }
 
 .region-footer-secondcolumn  {
-font-size: 11px;
-text-decoration: none;
+  font-size: 11px;
+  text-decoration: none;
 }
 
 .social_links a {
@@ -1808,88 +1765,21 @@ text-decoration: none;
 }
 
 #footer-wrapper .block {
-    margin: 0 ;
+  margin: 0 ;
 }
 
 #footer-logo   {
-height: 47px;
-width: 780px;
-height: 47px;
-margin: 50px auto 0;
-background: transparent url('../images/logo_footer_integrar.png') no-repeat left top;
+  height: 47px;
+  width: 780px;
+  height: 47px;
+  margin: 50px auto 0;
+  background: transparent url('../images/logo_footer_integrar.png') no-repeat left top;
 }
 
 .contexto-consultoria #footer-logo   {
-background: transparent url('../images/logo_footer_consultoria.png') no-repeat left top;
+  background: transparent url('../images/logo_footer_consultoria.png') no-repeat left top;
 }
 
 .contexto-capacitacion #footer-logo   {
-background: transparent url('../images/logo_footer_capacitacion.png') no-repeat left top;
+  background: transparent url('../images/logo_footer_capacitacion.png') no-repeat left top;
 }
-
-
-
- /** NOVEDADES anterior de la home
-
-
-.pane-bloque-novedades {
-position: relative;
-background-image: url("../images/base_programas.png") ;
-background-position: 0px 30px;
-background-repeat: no-repeat;
-padding: 30px 30px 30px 30px;
-text-align: left;
-width: 400px;
-height: 250px;
-margin-left: 0px;
-}
-
-.pane-bloque-novedades .view-header {
-  font-size:0px;
-  content:" ";
-  color:transparent;
-  background-image: url("../images/novedades.png") ;
-  display:block;
-  width: 27px;
-  height: 22px;
-  opacity:1;
-  position:absolute;
-  top:90px;
-  left:55px;
-  background-repeat: no-repeat;
-  display: block;
- } 
- 
- .pane-bloque-novedades .view-content {
- margin-top: 20px;
-  }
-
-.pane-bloque-novedades h2 {
-text-transform: capitalize;
-margin-left: 50px;
-color: #1d639a;
-}
-
-.pane-bloque-novedades a {
-color: rgb(0,0,0);
-margin-left: 80px;
-}
-
-.pane-bloque-novedades .more-link a {
-font-size:0px;
-content:" ";
-color:transparent;
-background-image: url("../images/info_capacitacion.png");
-display:block;
-width: 76px;
-height: 38px;
-margin-left: 315px;
-margin-top: 30px;
-opacity:1;
-}
-
-.pane-bloque-novedades .more-link:hover a {
-  background-image: url("../images/info_capacitacion_over.png");
-}
-
-**/
