@@ -819,7 +819,7 @@ text-align: justify;
 
 /** POPUP BUSQUEDAS **/
 
-.busquedas-popup a  {
+.page-consultoria-busquedas-laborales .busquedas-popup a  {
   margin-left: 700px;
   border: 0;
   font-size:0pt;
@@ -827,14 +827,15 @@ text-align: justify;
   background: transparent url("../images/info_consultoria.png") no-repeat center top;
   height: 45px;
   width: 99px;
+  top: -10px;
 }
 
-.busquedas-popup a:hover  {
+.page-consultoria-busquedas-laborales .busquedas-popup a:hover  {
   background: transparent url("../images/info_consultoria_over.png") no-repeat center top;
 }
 
-.popup-element-body {
-  background-image: url("../images/base_destacados.png");
+.page-consultoria-busquedas-laborales .popup-element-body {
+/*  background-image: url("../images/base_destacados.png");
   background-position: 0 0;
   background-repeat: no-repeat;
   height: 245px;
@@ -844,11 +845,11 @@ text-align: justify;
   text-align: left;
   width: 375px;
   top: -100px;
-  left: -420px;
+  left: -420px;*/
 
 }
 
-.popup-element-body a.popup-close-button {
+.page-consultoria-busquedas-laborales .popup-element-body a.popup-close-button {
   background-image: url("../images/close.png");
   background-position: 0 0;
   background-repeat: no-repeat;
@@ -918,7 +919,7 @@ text-align: justify;
   width: 22px;
 }
 
-.panel-destacados .ver-mas-link a {
+.pane-slideshow-para-busquedas .field-content   a {
  color: #4d8a43;
 }
 
@@ -1463,18 +1464,20 @@ text-align: justify;
 
 .view-novedades-capacitacion .ver-mas a {
   margin-left: 385px;
-  background: transparent url("../images/ver+.png") no-repeat 0 -45px;
+  background: transparent url("../images/btn_ver.png") no-repeat  0px 0px;
+  background-repeat: no-repeat;
   font-size:0px;
   content:" ";
   color:transparent;
   display:block;
   position: relative;
-  width: 78px;
-  height: 45px;
+  top: -50px;
+  width: 58px;
+  height: 37px;
 }
 
 .view-novedades-capacitacion .ver-mas a:hover {
-  background-position: 0px 0px;
+  background-position:  0px -37px;
 }
 
 .view-novedades-capacitacion .views_slideshow_cycle_main  {
@@ -1540,6 +1543,34 @@ text-align: justify;
 }
 
 
+/** POPUP NOVEDADES **/
+
+.page-capacitacion-novedades .busquedas-popup a  {
+  margin-left: 700px;
+  border: 0;
+  font-size:0pt;
+  background: none;
+  height: 45px;
+  width: 99px;
+}
+
+.page-capacitacion-novedades .popup-element-body {
+  height: 245px;
+  margin-left: 0;
+  padding: 25px 35px 35px;
+  position: relative;
+  text-align: left;
+  width: 375px;
+  top: -100px;
+  left: -420px;
+
+}
+
+.page-capacitacion-novedades .popup-element-body a.popup-close-button {
+  height: 9px;
+  width: 9px;
+}
+ 
 
 /** DESTACADOS CAPACITACION **/
 
@@ -1561,14 +1592,16 @@ text-align: justify;
 
 .pane-novedades-destacados-capacitacion .novedades-capacitacion-title {
  font-size: 1.2em;
- color: #114f79;
+ color: #878787;
  text-decoration: none;
  padding-bottom: 20px;
 }
 
-.pane-novedades-destacados-capacitacion .fecha-inicio {
-  text-align: right;
-
+ .pane-novedades-destacados-capacitacion .fecha-inicio {
+   text-align: right;
+   margin-top: -26px;
+   font-size: 1.2em;
+   color: #114f79;
 }
 
 /** CONTACTO CAPACITACION **/
