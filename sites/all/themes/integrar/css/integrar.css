@@ -835,18 +835,10 @@ text-align: justify;
 }
 
 .page-consultoria-busquedas-laborales .popup-element-body {
-/*  background-image: url("../images/base_destacados.png");
-  background-position: 0 0;
+  background-image: url("../images/base_busqueda.png");
   background-repeat: no-repeat;
-  height: 245px;
-  margin-left: 0;
-  padding: 25px 35px 35px;
-  position: relative;
-  text-align: left;
-  width: 375px;
-  top: -100px;
-  left: -420px;*/
-
+  background-position: left 25px bottom 25px; 
+  width: 565px;
 }
 
 .page-consultoria-busquedas-laborales .popup-element-body a.popup-close-button {
@@ -1555,23 +1547,25 @@ text-align: justify;
 }
 
 .page-capacitacion-novedades .popup-element-body {
-  height: 245px;
-  margin-left: 0;
-  padding: 25px 35px 35px;
-  position: relative;
-  text-align: left;
-  width: 375px;
-  top: -100px;
-  left: -420px;
-
+  text-align: justify;
+  padding: 10px 15px 10px 10px;
 }
 
 .page-capacitacion-novedades .popup-element-body a.popup-close-button {
-  height: 9px;
-  width: 9px;
+  background-image: url("../images/close_capacitacion.png");
+  background-position: 0 0;
+  background-repeat: no-repeat;
+  font-size:0pt;
+  height: 34px;
+  width: 34px;
 }
- 
 
+.page-capacitacion-novedades .popup-element-body {
+  background-image: url("../images/barra_novedades.png");
+  background-repeat: no-repeat;
+  background-position: left 9px bottom 25px; 
+  width: 501px;
+}
 /** DESTACADOS CAPACITACION **/
 
 .pane-novedades-destacados-capacitacion {
